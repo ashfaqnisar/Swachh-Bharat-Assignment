@@ -1,6 +1,6 @@
 package com.rubicon.swachh;
 
-import com.rubicon.swachh.util.User;
+import com.rubicon.swachh.util.WastageType;
 
 public class App
 {
@@ -9,12 +9,19 @@ public class App
         Register register = new Register();
         Login login = new Login();
 
-        User user1 = login.generateLoginForm();
-        //User user2 = register.generateRegistrationForm();
-        //System.out.println(user1.getName());
-        System.out.println(user1.getEmail());
-        //System.out.println(user1.getAddress());
-        System.out.println(user1.getNumber());
+        Wastage wastage = new Wastage();
+
+        WastageType wastageType = wastage.generateWastageForm();
+
+        System.out.println(wastageType.isGlass());
+
+
+//        User user1 = login.generateLoginForm();
+//        //User user2 = register.generateRegistrationForm();
+//        //System.out.println(user1.getName());
+//        System.out.println(user1.getEmail());
+//        //System.out.println(user1.getAddress());
+//        System.out.println(user1.getNumber());
 
     }
 }
