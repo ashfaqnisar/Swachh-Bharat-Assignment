@@ -20,12 +20,16 @@ public class Wastage {
         switch (switch_case) {
             case 1:
                 wastageType.setGlass(true);
+                break;
             case 2:
                 wastageType.setPlastic(true);
+                break;
             case 3:
                 wastageType.setMetal(true);
+                break;
             default:
                 System.out.println("Please select the correct option");
+                break;
         }
         return wastageType;
     }
