@@ -1,32 +1,29 @@
 package com.rubicon.swachh;
 
-import com.rubicon.swachh.util.User;
-import com.rubicon.swachh.util.WastageType;
+import com.rubicon.swachh.util.Report;
 
 public class App
 {
     public static void main(String[] args)
     {
         Register register = new Register();
-        Login login = new Login();
-
         Wastage wastage = new Wastage();
 
-        User user1 = login.generateLoginForm();
-        User user2 = register.generateRegistrationForm();
-        WastageType wastageType = wastage.generateWastageForm();
+        Report report = new Report();
 
-        System.out.println(user1.getEmail());
-        System.out.println(user1.getNumber());
+        report.setUser(register.generateRegistrationForm());
+        report.setWastageType(wastage.generateWastageForm());
 
-        System.out.println(user2.getName());
-        System.out.println(user2.getEmail());
-        System.out.println(user2.getAddress());
-        System.out.println(user2.getNumber());
+        System.out.println(report.getReport());
 
-        System.out.println(wastageType.isGlass());
-        System.out.println(wastageType.isPlastic());
-        System.out.println(wastageType.isMetal());
+//        System.out.println(user2.getName());
+//        System.out.println(user2.getEmail());
+//        System.out.println(user2.getAddress());
+//        System.out.println(user2.getNumber());
+//
+//        System.out.println(wastageType.isGlass());
+//        System.out.println(wastageType.isPlastic());
+//        System.out.println(wastageType.isMetal());
 
 
 //
