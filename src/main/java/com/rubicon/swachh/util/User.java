@@ -1,4 +1,4 @@
-package com.rubicon.swachh;
+package com.rubicon.swachh.util;
 
 public class User {
     private String name;
@@ -6,7 +6,7 @@ public class User {
     private Long number;
     private String address;
 
-    User() {
+    public User() {
     }
 
     User(String email, Long number) {
@@ -52,6 +52,4 @@ public class User {
     public void setAddress(String address) {
         this.address = address;
     }
-
-
 }
