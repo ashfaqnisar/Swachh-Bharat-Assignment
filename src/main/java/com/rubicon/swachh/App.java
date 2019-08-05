@@ -4,13 +4,13 @@ public class App
 {
     public static void main(String[] args)
     {
+        Register object = new Register();
 
+        User user = object.generateRegistrationForm();
+        System.out.println(user.getName());
+        System.out.println(user.getEmail());
+        System.out.println(user.getAddress());
+        System.out.println(user.getNumber());
 
-        Register mRegister = new Register();
-        mRegister.generateRegistrationForm();
-        System.out.println(mRegister.getmNameText());
-        System.out.println(mRegister.getmPhoneInt());
-        System.out.println(mRegister.getmEmailText());
-        System.out.println(mRegister.getmAddressText());
     }
 }
