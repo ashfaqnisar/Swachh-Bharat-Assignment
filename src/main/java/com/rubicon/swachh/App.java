@@ -33,9 +33,5 @@ public class App
 //        System.out.println(wastageType.isGlass());
 //        System.out.println(wastageType.isPlastic());
 //        System.out.println(wastageType.isMetal());
-
-
-//
-
     }
 }
