@@ -1,6 +1,7 @@
 package com.rubicon.swachh;
 
 import com.rubicon.swachh.util.Report;
+import com.thoughtworks.xstream.XStream;
 
 public class App
 {
@@ -12,11 +13,17 @@ public class App
 
         Report report = new Report();
 
+        XStream xstream = new XStream();
+
         report.setUser(register.generateRegistrationForm());
         report.setWastageType(wastage.generateWastageForm());
         report.setCouponData(coupon.generateCouponCode());
 
+        String XML = xstream.toXML(report);
+
         System.out.println(report.getReport());
+        System.out.println(XML);
+
 
 //        System.out.println(user2.getName());
 //        System.out.println(user2.getEmail());
