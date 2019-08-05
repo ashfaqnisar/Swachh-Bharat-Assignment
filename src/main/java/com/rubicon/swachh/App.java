@@ -8,11 +8,13 @@ public class App
     {
         Register register = new Register();
         Wastage wastage = new Wastage();
+        Coupon coupon = new Coupon();
 
         Report report = new Report();
 
         report.setUser(register.generateRegistrationForm());
         report.setWastageType(wastage.generateWastageForm());
+        report.setCouponData(coupon.generateCouponCode());
 
         System.out.println(report.getReport());
 
