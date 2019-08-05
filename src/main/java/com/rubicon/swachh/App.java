@@ -4,8 +4,10 @@ public class App
 {
     public static void main(String[] args)
     {
+
+
         Register mRegister = new Register();
-        mRegister.printRegistrationForm();
+        mRegister.generateRegistrationForm();
         System.out.println(mRegister.getmNameText());
         System.out.println(mRegister.getmPhoneInt());
         System.out.println(mRegister.getmEmailText());

@@ -43,7 +43,7 @@ public class Register {
         this.mPhoneInt = mPhoneInt;
     }
 
-    void printRegistrationForm() {
+    void generateRegistrationForm() {
         System.out.println("Registration: ");
         System.out.print("Hello There, Please provide your name: ");
         mNameText = mScanner.nextLine();

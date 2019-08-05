@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c98d325-afc0-422b-98de-460fde754272" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rubicon/swachh/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rubicon/swachh/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rubicon/swachh/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rubicon/swachh/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rubicon/swachh/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rubicon/swachh/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rubicon/swachh/Register.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rubicon/swachh/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rubicon/swachh/App.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,17 +46,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rubicon/swachh/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+            <state>
+              <caret column="27" lean-forward="true" selection-start-column="27" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rubicon/swachh/Register.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-279">
-              <caret line="38" column="11" lean-forward="true" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
+            <state relative-caret-position="192">
+              <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
               <folding>
                 <element signature="e#188#189#0" expanded="true" />
                 <element signature="e#220#221#0" expanded="true" />
@@ -81,11 +79,21 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rubicon/swachh/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            <state relative-caret-position="519">
+              <caret line="34" column="29" lean-forward="true" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+              <folding>
+                <element signature="e#174#175#0" expanded="true" />
+                <element signature="e#207#208#0" expanded="true" />
+                <element signature="e#259#260#0" expanded="true" />
+                <element signature="e#303#304#0" expanded="true" />
+                <element signature="e#340#341#0" expanded="true" />
+                <element signature="e#373#374#0" expanded="true" />
+                <element signature="e#425#426#0" expanded="true" />
+                <element signature="e#469#470#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -124,6 +132,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/rubicon/swachh/App.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rubicon/swachh/Register.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rubicon/swachh/Login.java" />
       </list>
     </option>
   </component>
@@ -273,7 +282,7 @@
       <workItem from="1564943020926" duration="311000" />
       <workItem from="1564943606163" duration="2717000" />
       <workItem from="1564983095074" duration="6729000" />
-      <workItem from="1564994582126" duration="3630000" />
+      <workItem from="1564994582126" duration="5362000" />
     </task>
     <task id="LOCAL-00001" summary="Updated the gitignore file">
       <created>1564985168455</created>
@@ -296,17 +305,31 @@
       <option name="project" value="LOCAL" />
       <updated>1564996460320</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="7. Updated the registration form">
+      <created>1564998305937</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1564998305937</updated>
+    </task>
+    <task id="LOCAL-00005" summary="8. Created the Login File">
+      <created>1564998400094</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1564998400094</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13387000" />
+    <option name="totallyTimeSpent" value="15119000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26418918" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26418918" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -390,7 +413,9 @@
     <MESSAGE value="Updated the gitignore file" />
     <MESSAGE value="5. Added the shade plugin in the POM file to execute the JAR without the class file" />
     <MESSAGE value="6. Created the register file and connected it with the app file" />
-    <option name="LAST_COMMIT_MESSAGE" value="6. Created the register file and connected it with the app file" />
+    <MESSAGE value="7. Updated the registration form" />
+    <MESSAGE value="8. Created the Login File" />
+    <option name="LAST_COMMIT_MESSAGE" value="8. Created the Login File" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -433,13 +458,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rubicon/swachh/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -449,15 +467,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rubicon/swachh/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        <state>
+          <caret column="27" lean-forward="true" selection-start-column="27" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rubicon/swachh/Register.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-279">
-          <caret line="38" column="11" lean-forward="true" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
+        <state relative-caret-position="192">
+          <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
           <folding>
             <element signature="e#188#189#0" expanded="true" />
             <element signature="e#220#221#0" expanded="true" />
@@ -475,6 +493,23 @@
             <element signature="e#871#872#0" expanded="true" />
             <element signature="e#918#919#0" expanded="true" />
             <element signature="e#960#961#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rubicon/swachh/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="34" column="29" lean-forward="true" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+          <folding>
+            <element signature="e#174#175#0" expanded="true" />
+            <element signature="e#207#208#0" expanded="true" />
+            <element signature="e#259#260#0" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#340#341#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#469#470#0" expanded="true" />
           </folding>
         </state>
       </provider>
