@@ -14,6 +14,9 @@ public class App
         WastageType wastageType = wastage.generateWastageForm();
 
         System.out.println(wastageType.isGlass());
+        System.out.println(wastageType.isMetal());
+        System.out.println(wastageType.isPlastic());
+
 
 
 //        User user1 = login.generateLoginForm();
