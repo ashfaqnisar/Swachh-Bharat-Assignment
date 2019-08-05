@@ -1,5 +1,7 @@
 package com.rubicon.swachh;
 
+import com.rubicon.swachh.util.User;
+
 import java.util.Scanner;
 
 public class Register {

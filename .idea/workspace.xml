@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c98d325-afc0-422b-98de-460fde754272" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rubicon/swachh/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rubicon/swachh/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rubicon/swachh/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rubicon/swachh/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rubicon/swachh/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rubicon/swachh/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rubicon/swachh/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rubicon/swachh/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rubicon/swachh/util/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/rubicon/swachh/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rubicon/swachh/App.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -49,17 +49,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rubicon/swachh/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="246">
+              <caret line="11" column="47" lean-forward="true" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rubicon/swachh/User.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rubicon/swachh/util/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-564">
-              <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+            <state relative-caret-position="1431">
+              <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
               <folding>
                 <element signature="e#182#183#0" expanded="true" />
                 <element signature="e#209#210#0" expanded="true" />
@@ -85,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rubicon/swachh/Register.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+            <state relative-caret-position="-123">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,11 +97,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rubicon/swachh/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="621">
+              <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
               <folding>
-                <element signature="e#395#396#0" expanded="true" />
-                <element signature="e#428#429#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -139,9 +138,10 @@
         <option value="$PROJECT_DIR$/Swachh-Bharat.iml" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rubicon/swachh/Login.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rubicon/swachh/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rubicon/swachh/Register.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rubicon/swachh/util/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rubicon/swachh/Login.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rubicon/swachh/App.java" />
       </list>
     </option>
@@ -221,6 +221,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="swachh" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Swachh-Bharat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Swachh-Bharat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="swachh" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -265,7 +274,7 @@
       <module name="Swachh-Bharat" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.rubicon.swachh.*" />
+          <option name="PATTERN" value="com.rubicon.swachh.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -293,7 +302,7 @@
       <workItem from="1564943606163" duration="2717000" />
       <workItem from="1564983095074" duration="6729000" />
       <workItem from="1564994582126" duration="5362000" />
-      <workItem from="1565006473347" duration="2108000" />
+      <workItem from="1565006473347" duration="2813000" />
     </task>
     <task id="LOCAL-00001" summary="Updated the gitignore file">
       <created>1564985168455</created>
@@ -337,11 +346,25 @@
       <option name="project" value="LOCAL" />
       <updated>1565006635275</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="10. Created the data class for the user.">
+      <created>1565008860735</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1565008860735</updated>
+    </task>
+    <task id="LOCAL-00008" summary="11. Connected the user data class in the register class.">
+      <created>1565008916017</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1565008916017</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17227000" />
+    <option name="totallyTimeSpent" value="17932000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
@@ -434,7 +457,9 @@
     <MESSAGE value="7. Updated the registration form" />
     <MESSAGE value="8. Created the Login File" />
     <MESSAGE value="9. Created the form in the Login Java file" />
-    <option name="LAST_COMMIT_MESSAGE" value="9. Created the form in the Login Java file" />
+    <MESSAGE value="10. Created the data class for the user." />
+    <MESSAGE value="11. Connected the user data class in the register class." />
+    <option name="LAST_COMMIT_MESSAGE" value="11. Connected the user data class in the register class." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -486,29 +511,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rubicon/swachh/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rubicon/swachh/Register.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        <state relative-caret-position="621">
+          <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rubicon/swachh/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rubicon/swachh/Register.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-564">
-          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+        <state relative-caret-position="-123">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rubicon/swachh/util/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1431">
+          <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
           <folding>
             <element signature="e#182#183#0" expanded="true" />
             <element signature="e#209#210#0" expanded="true" />
@@ -532,8 +556,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rubicon/swachh/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="246">
+          <caret line="11" column="47" lean-forward="true" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
         </state>
       </provider>
     </entry>

@@ -1,16 +1,20 @@
 package com.rubicon.swachh;
 
-public class App 
+import com.rubicon.swachh.util.User;
+
+public class App
 {
     public static void main(String[] args)
     {
-        Register object = new Register();
+        Register register = new Register();
+        Login login = new Login();
 
-        User user = object.generateRegistrationForm();
-        System.out.println(user.getName());
-        System.out.println(user.getEmail());
-        System.out.println(user.getAddress());
-        System.out.println(user.getNumber());
+        User user1 = login.generateLoginForm();
+        //User user2 = register.generateRegistrationForm();
+        //System.out.println(user1.getName());
+        System.out.println(user1.getEmail());
+        //System.out.println(user1.getAddress());
+        System.out.println(user1.getNumber());
 
     }
 }
