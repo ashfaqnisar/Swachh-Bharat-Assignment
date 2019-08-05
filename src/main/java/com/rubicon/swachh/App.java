@@ -1,13 +1,14 @@
 package com.rubicon.swachh;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
-    public static void main( String[] args )
+    public static void main(String[] args)
     {
-        System.out.println( "Hello World!" );
+        Register mRegister = new Register();
+        mRegister.printRegistrationForm();
+        System.out.println(mRegister.getmNameText());
+        System.out.println(mRegister.getmPhoneInt());
+        System.out.println(mRegister.getmEmailText());
+        System.out.println(mRegister.getmAddressText());
     }
 }

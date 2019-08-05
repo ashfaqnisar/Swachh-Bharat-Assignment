@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c98d325-afc0-422b-98de-460fde754272" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rubicon/swachh/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Swachh-Bharat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Swachh-Bharat.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rubicon/swachh/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rubicon/swachh/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rubicon/swachh/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rubicon/swachh/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rubicon/swachh/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rubicon/swachh/App.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,15 +22,93 @@
     </execution>
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2592">
+              <caret line="96" column="23" selection-start-line="96" selection-start-column="23" selection-end-line="96" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rubicon/swachh/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rubicon/swachh/Register.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-279">
+              <caret line="38" column="11" lean-forward="true" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
+              <folding>
+                <element signature="e#188#189#0" expanded="true" />
+                <element signature="e#220#221#0" expanded="true" />
+                <element signature="e#270#271#0" expanded="true" />
+                <element signature="e#312#313#0" expanded="true" />
+                <element signature="e#356#357#0" expanded="true" />
+                <element signature="e#396#397#0" expanded="true" />
+                <element signature="e#535#536#0" expanded="true" />
+                <element signature="e#579#580#0" expanded="true" />
+                <element signature="e#559#560#0" expanded="true" />
+                <element signature="e#594#595#0" expanded="true" />
+                <element signature="e#650#651#0" expanded="true" />
+                <element signature="e#698#699#0" expanded="true" />
+                <element signature="e#839#840#0" expanded="true" />
+                <element signature="e#871#872#0" expanded="true" />
+                <element signature="e#918#919#0" expanded="true" />
+                <element signature="e#960#961#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rubicon/swachh/Login.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="ashfaqnisar &lt;ashfaqnisar00@gmail.com&gt;" />
+        <option value="Ashfaq Nisar &lt;ashfaqnisar00@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="GithubProjectSettings">
     <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
@@ -39,10 +119,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rubicon/swachh/App.java" />
+        <option value="$PROJECT_DIR$/Swachh-Bharat.iml" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/Swachh-Bharat.iml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rubicon/swachh/App.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rubicon/swachh/Register.java" />
       </list>
     </option>
   </component>
@@ -98,7 +179,28 @@
             <path>
               <item name="Swachh-Bharat" type="b2602c69:ProjectViewProjectNode" />
               <item name="Swachh-Bharat" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Swachh-Bharat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Swachh-Bharat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Swachh-Bharat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Swachh-Bharat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Swachh-Bharat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Swachh-Bharat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="swachh" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -138,6 +240,26 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rubicon.swachh.App" />
+      <module name="Swachh-Bharat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rubicon.swachh.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -150,17 +272,41 @@
       <updated>1564943016827</updated>
       <workItem from="1564943020926" duration="311000" />
       <workItem from="1564943606163" duration="2717000" />
-      <workItem from="1564983095074" duration="1912000" />
+      <workItem from="1564983095074" duration="6729000" />
+      <workItem from="1564994582126" duration="3630000" />
     </task>
+    <task id="LOCAL-00001" summary="Updated the gitignore file">
+      <created>1564985168455</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1564985168455</updated>
+    </task>
+    <task id="LOCAL-00002" summary="5. Added the shade plugin in the POM file to execute the JAR without the class file">
+      <created>1564990848101</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1564990848115</updated>
+    </task>
+    <task id="LOCAL-00003" summary="6. Created the register file and connected it with the app file">
+      <created>1564996460320</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1564996460320</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4940000" />
+    <option name="totallyTimeSpent" value="13387000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25945947" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26418918" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -170,7 +316,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.9431988" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4529148" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -179,7 +325,8 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.7638266" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49932432" weight="0.32884902" />
+      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49932432" weight="0.6756353" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32884902" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -237,6 +384,17 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="Updated the gitignore file" />
+    <MESSAGE value="5. Added the shade plugin in the POM file to execute the JAR without the class file" />
+    <MESSAGE value="6. Created the register file and connected it with the app file" />
+    <option name="LAST_COMMIT_MESSAGE" value="6. Created the register file and connected it with the app file" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rubicon/quickstart/App.java" />
     <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
@@ -268,24 +426,56 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="2592">
+          <caret line="96" column="23" selection-start-line="96" selection-start-column="23" selection-end-line="96" selection-end-column="23" />
         </state>
       </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rubicon/swachh/App.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rubicon/swachh/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+        <state relative-caret-position="54">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="189">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rubicon/swachh/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rubicon/swachh/Register.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-279">
+          <caret line="38" column="11" lean-forward="true" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
+          <folding>
+            <element signature="e#188#189#0" expanded="true" />
+            <element signature="e#220#221#0" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
+            <element signature="e#535#536#0" expanded="true" />
+            <element signature="e#579#580#0" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#650#651#0" expanded="true" />
+            <element signature="e#698#699#0" expanded="true" />
+            <element signature="e#839#840#0" expanded="true" />
+            <element signature="e#871#872#0" expanded="true" />
+            <element signature="e#918#919#0" expanded="true" />
+            <element signature="e#960#961#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
