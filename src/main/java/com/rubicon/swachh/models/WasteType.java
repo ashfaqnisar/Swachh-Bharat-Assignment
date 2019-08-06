@@ -1,14 +1,14 @@
 package com.rubicon.swachh.models;
 
-public class WastageType {
+public class WasteType {
     private boolean glass = false;
     private boolean metal = false;
     private boolean plastic = false;
 
-    public WastageType() {
+    public WasteType() {
     }
 
-    WastageType(boolean glass, boolean metal, boolean plastic) {
+    WasteType(boolean glass, boolean metal, boolean plastic) {
         this.glass = glass;
         this.metal = metal;
         this.plastic = plastic;
@@ -53,7 +53,7 @@ public class WastageType {
 
     @Override
     public String toString() {
-        return "\nWastage Data: \n" +
+        return "\nWaste Data: \n" +
                 "\tGlass: " + isGlass() + "\n" +
                 "\tPlastic: " + isPlastic() + "\n" +
                 "\tMetal: " + isMetal();
