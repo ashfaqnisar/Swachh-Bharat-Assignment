@@ -1,21 +1,21 @@
 package com.rubicon.swachh.models;
 
 public class CouponData {
-    private String CouponCode;
+    private String couponCode;
 
     public CouponData(){
     }
 
     public CouponData(String couponCode) {
-        CouponCode = couponCode;
+        this.couponCode = couponCode;
     }
 
     public String getCouponCode() {
-        return CouponCode;
+        return couponCode;
     }
 
     public void setCouponCode(String couponCode) {
-        CouponCode = couponCode;
+        this.couponCode = couponCode;
     }
 
     @Override

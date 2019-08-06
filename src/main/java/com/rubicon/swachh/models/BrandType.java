@@ -1,9 +1,5 @@
 package com.rubicon.swachh.models;
 
-
-import java.util.HashMap;
-import java.util.Map;
-
 public class BrandType {
     private boolean SpriteBrand = false;
     private boolean CokeBrand = false;
@@ -13,8 +9,6 @@ public class BrandType {
 
     private String brandName = "";
     private int brandCost = 0;
-
-    private Map<String,Integer> brands= new HashMap<>();
 
     public boolean isSpriteBrand() {
         return SpriteBrand;
