@@ -10,10 +10,12 @@ public class Brand {
     private Scanner scanner = new Scanner(System.in);
     private BrandType brandType = new BrandType();
 
-    BrandType generateBrandTypeForm(WasteType wasteType){
+    BrandType generateBrandTypeForm(String wastageType){
         System.out.println("Brand: ");
-        if (!wasteType.getWastageType().equals("Default")){
-            System.out.println("Please, provide the brand of the "+ wasteType.getWastageType() + " if known, else select the other option");
+        if (!wastageType.equals("Default")){
+            System.out.println("Please, provide the brand of the "+ wastageType + " if known, " +
+                    "else select" +
+                    " the other option");
 
             System.out.println("\t1. Spirte");
             System.out.println("\t2. Coke");

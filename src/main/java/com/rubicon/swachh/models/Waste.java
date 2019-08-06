@@ -4,6 +4,10 @@ public class Waste {
     private WasteType wasteType;
     private BrandType brandType;
 
+    public Waste(){
+
+    }
+
     public Waste(WasteType wasteType, BrandType brandType) {
         this.wasteType = wasteType;
         this.brandType = brandType;
@@ -13,8 +17,9 @@ public class Waste {
         return wasteType;
     }
 
-    public void setWasteType(WasteType wasteType) {
+    public WasteType setWasteType(WasteType wasteType) {
         this.wasteType = wasteType;
+        return wasteType;
     }
 
     public BrandType getBrandType() {
