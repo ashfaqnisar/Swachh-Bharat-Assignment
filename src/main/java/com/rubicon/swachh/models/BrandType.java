@@ -93,15 +93,8 @@ public class BrandType {
 
     @Override
     public String toString() {
-        return "BrandType{" +
-                "SpriteBrand=" + SpriteBrand +
-                ", CokeBrand=" + CokeBrand +
-                ", DietCokeBrand=" + DietCokeBrand +
-                ", ThumbsUpBrand=" + ThumbsUpBrand +
-                ", OtherBrand=" + OtherBrand +
-                ", brandName='" + brandName + '\'' +
-                ", brandCost=" + brandCost +
-                '}';
+        return  "\nBrand of the Wastage: \n" +
+                "Brand Name: "+ brandName+ "\n"+
+                "Brand Weight"+ brandCost;
     }
-
 }

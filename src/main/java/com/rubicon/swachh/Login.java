@@ -16,7 +16,7 @@ public class Login {
         System.out.print("Hello there, can you provide your email id: ");
         user.setEmail(mScanner.nextLine());
 
-        System.out.print("\n\n");
+        System.out.print("\n");
 
         System.out.print("Thank you, please provide the number: ");
         user.setNumber(mScanner.nextLong());

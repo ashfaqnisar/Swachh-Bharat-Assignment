@@ -53,9 +53,6 @@ public class WasteType {
 
     @Override
     public String toString() {
-        return "\nWaste Data: \n" +
-                "\tGlass: " + isGlass() + "\n" +
-                "\tPlastic: " + isPlastic() + "\n" +
-                "\tMetal: " + isMetal();
+        return "\nType of the Waste: \n" + getWastageType();
     }
 }

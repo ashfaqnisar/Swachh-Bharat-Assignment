@@ -32,9 +32,6 @@ public class Waste {
 
     @Override
     public String toString() {
-        return "Waste{" +
-                "wasteType=" + wasteType +
-                ", brandType=" + brandType +
-                '}';
+        return wasteType.toString()+brandType.toString();
     }
 }

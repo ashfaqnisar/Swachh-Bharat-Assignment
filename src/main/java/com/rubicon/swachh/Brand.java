@@ -1,7 +1,6 @@
 package com.rubicon.swachh;
 
 import com.rubicon.swachh.models.BrandType;
-import com.rubicon.swachh.models.WasteType;
 
 import java.util.Scanner;
 
@@ -28,27 +27,27 @@ public class Brand {
 
             switch (switch_case){
                 case 1:
-                    System.out.println("Sprite Brand has been selected.");
+                    System.out.println("Sprite Brand has been selected.\n");
                     brandType.setSpriteBrand(true);
                     break;
                 case 2:
-                    System.out.println("Coke Brand has been selected.");
+                    System.out.println("Coke Brand has been selected.\n");
                     brandType.setCokeBrand(true);
                     break;
                 case 3:
-                    System.out.println("Diet Coke Brand has been selected.");
+                    System.out.println("Diet Coke Brand has been selected.\n");
                     brandType.setDietCokeBrand(true);
                     break;
                 case 4:
-                    System.out.println("ThumbsUp Brand has been selected.");
+                    System.out.println("ThumbsUp Brand has been selected.\n");
                     brandType.setThumbsUpBrand(true);
                     break;
                 case 5:
-                    System.out.println("Other Brand has been selected.");
+                    System.out.println("Other Brand has been selected.\n");
                     brandType.setOtherBrand(true);
                     break;
                 default:
-                    System.out.println("Please, select the correct option.");
+                    System.out.println("Please, select the correct option.\n");
                     break;
             }
         }

@@ -51,6 +51,7 @@ public class Report {
         return waste.toString();
     }
 
+
     private String getCouponUserData() {
         return couponData.toString();
     }
