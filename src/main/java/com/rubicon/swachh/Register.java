@@ -19,8 +19,8 @@ public class Register {
         System.out.print("\n");
 
         System.out.print("Hi " + user.getName() + ", can you please provide your email address: ");
+        //System.out.print("Don't Worry, we are not going to spam you");
         user.setEmail(mScanner.nextLine());
-        System.out.print("Don't Worry, we are not going to spam you");
 
         System.out.print("\n");
 

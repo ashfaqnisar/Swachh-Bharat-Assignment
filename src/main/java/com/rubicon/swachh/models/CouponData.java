@@ -20,6 +20,6 @@ public class CouponData {
 
     @Override
     public String toString() {
-        return "\nCoupon: \t\t" + getCouponCode();
+        return "\nCoupon Code: " + getCouponCode() + "\n\n";
     }
 }

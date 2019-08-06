@@ -10,7 +10,6 @@ public class Brand {
     private BrandType brandType = new BrandType();
 
     BrandType generateBrandTypeForm(String wastageType){
-        System.out.println("Brand: ");
         if (!wastageType.equals("Default")){
             System.out.println("Please, provide the brand of the "+ wastageType + " if known, " +
                     "else select" +

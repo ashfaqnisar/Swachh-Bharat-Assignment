@@ -47,11 +47,11 @@ public class User {
 
     @Override
     public String toString() {
-        return "\nUser Information: " + "\n\t" +
-                "Name: " + getName() + "\n\t\t" +
-                getAddress() + "\n\t\t" +
-                getEmail() + "\n\t\t" +
-                getNumber();
+        return "\nUser Information: " + "\n" +
+                "Name:     " + getName() + "\n" +
+                "Email:    " + getEmail() + "\n" +
+                "Number:   " + getNumber() + "\n"+
+                "Address:  " + getAddress() + "\n";
     }
 
     public String getAddress() {

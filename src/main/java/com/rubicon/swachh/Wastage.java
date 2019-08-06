@@ -10,8 +10,8 @@ public class Wastage {
 
     WasteType generateWastageForm() {
         System.out.println("Type of the Waste: ");
-        System.out.println("Please, select the type of wastage. You would like to deposit in the " +
-                "Kiosk");
+        System.out.println("Please select the type of wastage, which you will be depositing in " +
+                "the Kiosk");
         System.out.println("\t1. Glass");
         System.out.println("\t2. Plastic");
         System.out.println("\t3. Metal");
