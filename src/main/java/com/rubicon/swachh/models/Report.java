@@ -3,7 +3,7 @@ package com.rubicon.swachh.models;
 
 public class Report {
     private User user;
-    private WastageType wastageType;
+    private Waste waste;
     private CouponData couponData;
 
     public Report() {
@@ -13,18 +13,9 @@ public class Report {
         this.user = user;
     }
 
-    public Report(WastageType wastageType) {
-        this.wastageType = wastageType;
-    }
-
-    public Report(User user, WastageType wastageType) {
+    public Report(User user, Waste waste, CouponData couponData) {
         this.user = user;
-        this.wastageType = wastageType;
-    }
-
-    public Report(User user, WastageType wastageType, CouponData couponData) {
-        this.user = user;
-        this.wastageType = wastageType;
+        this.waste = waste;
         this.couponData = couponData;
     }
 
@@ -36,12 +27,12 @@ public class Report {
         this.user = user;
     }
 
-    public WastageType getWastageType() {
-        return wastageType;
+    public Waste getWaste() {
+        return waste;
     }
 
-    public void setWastageType(WastageType wastageType) {
-        this.wastageType = wastageType;
+    public void setWaste(Waste waste) {
+        this.waste = waste;
     }
 
     public CouponData getCouponData() {
@@ -52,24 +43,20 @@ public class Report {
         this.couponData = couponData;
     }
 
-
     private String getUserData() {
         return user.toString();
+    }
+
+    private String getWasteData() {
+        return waste.toString();
+    }
+
+    private String getCouponUserData() {
+        return couponData.toString();
     }
 
     public String getReport() {
         return getUserData() + getWasteData() + getCouponUserData();
     }
-
-    private String getWasteData() {
-        return wastageType.toString();
-    }
-
-    private String getCouponUserData(){
-        return couponData.toString();
-    }
-
-
-
 
 }
