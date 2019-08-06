@@ -21,6 +21,7 @@ public class App {
 
         XStream xstream = new XStream();
 
+
         report.setUser(register.generateRegistrationForm());
         WasteType wasteType = waste.setWasteType(wastage.generateWastageForm());
         waste.setBrandType(brand.generateBrandTypeForm(wasteType.getWastageType()));
@@ -32,6 +33,9 @@ public class App {
 
         System.out.println(report.getReport());
         System.out.println(XML);
+
+        Report report1 = (Report)xstream.fromXML(XML);
+        System.out.println(report1.getReport());
 
 
 //        System.out.println(user2.getName());
