@@ -35,15 +35,12 @@ public class App {
         report.setWaste(waste);
         report.setCouponData(coupon.generateCouponCode());
 
-        String XML = xstream.toXML(report);
+        String reportXML = xstream.toXML(report);
 
         System.out.println(report.getReport());
-        System.out.println(XML);
 
-        saver.saveTheData(XML);
+        saver.storeTheReport(reportXML,report);
 
-        Report report1 = (Report)xstream.fromXML(XML);
-        System.out.println(report1.getReport());
 
 
 //        System.out.println(user2.getName());
