@@ -8,9 +8,11 @@ import com.rubicon.swachh.other.Saver;
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.StandardStaxDriver;
 
+import java.io.IOException;
+
 
 public class App {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 //
         Register register = new Register();
 
