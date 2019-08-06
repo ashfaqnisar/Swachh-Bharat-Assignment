@@ -52,27 +52,21 @@ public class Report {
         this.couponData = couponData;
     }
 
-    public String getCouponUserData(){
-        return "\nCoupon: \t\t" + couponData.getCouponCode();
-    }
 
-    public String getUserData() {
-        return "\nUser Information: " + "\n\t" +
-                "Name: " + user.getName() + "\n\t\t" +
-                user.getAddress() + "\n\t\t" +
-                user.getEmail() + "\n\t\t" +
-                user.getNumber();
+    private String getUserData() {
+        return user.toString();
     }
 
     public String getReport() {
         return getUserData() + getWasteData() + getCouponUserData();
     }
 
-    public String getWasteData() {
-        return "\nWastage Data: \n" +
-                "\tGlass: " + wastageType.isGlass() + "\n" +
-                "\tPlastic: " + wastageType.isPlastic() + "\n" +
-                "\tMetal: " + wastageType.isMetal();
+    private String getWasteData() {
+        return wastageType.toString();
+    }
+
+    private String getCouponUserData(){
+        return couponData.toString();
     }
 
 
