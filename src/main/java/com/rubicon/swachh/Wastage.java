@@ -1,6 +1,6 @@
 package com.rubicon.swachh;
 
-import com.rubicon.swachh.util.WastageType;
+import com.rubicon.swachh.models.WastageType;
 
 import java.util.Scanner;
 

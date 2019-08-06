@@ -1,6 +1,6 @@
 package com.rubicon.swachh;
 
-import com.rubicon.swachh.util.Report;
+import com.rubicon.swachh.models.Report;
 import com.thoughtworks.xstream.XStream;
 
 public class App

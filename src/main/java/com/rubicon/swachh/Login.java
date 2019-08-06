@@ -1,6 +1,6 @@
 package com.rubicon.swachh;
 
-import com.rubicon.swachh.util.User;
+import com.rubicon.swachh.models.User;
 
 import java.util.Scanner;
 

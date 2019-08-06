@@ -1,4 +1,4 @@
-package com.rubicon.swachh.util;
+package com.rubicon.swachh.models;
 
 public class User {
     private String name;
