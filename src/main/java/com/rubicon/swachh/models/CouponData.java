@@ -17,4 +17,9 @@ public class CouponData {
     public void setCouponCode(String couponCode) {
         CouponCode = couponCode;
     }
+
+    @Override
+    public String toString() {
+        return "\nCoupon: \t\t" + getCouponCode();
+    }
 }

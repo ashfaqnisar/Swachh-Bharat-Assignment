@@ -37,4 +37,25 @@ public class WastageType {
     public void setPlastic(boolean plastic) {
         this.plastic = plastic;
     }
+
+    public String getWastageType(){
+        if (isGlass()){
+            return "Glass";
+        }
+        else if (isMetal()){
+            return "Metal";
+        }
+        else if (isPlastic()){
+            return "Plastic";
+        }
+        return "Default";
+    }
+
+    @Override
+    public String toString() {
+        return "\nWastage Data: \n" +
+                "\tGlass: " + isGlass() + "\n" +
+                "\tPlastic: " + isPlastic() + "\n" +
+                "\tMetal: " + isMetal();
+    }
 }

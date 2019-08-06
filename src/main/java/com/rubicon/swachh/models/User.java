@@ -45,6 +45,15 @@ public class User {
         this.number = number;
     }
 
+    @Override
+    public String toString() {
+        return "\nUser Information: " + "\n\t" +
+                "Name: " + getName() + "\n\t\t" +
+                getAddress() + "\n\t\t" +
+                getEmail() + "\n\t\t" +
+                getNumber();
+    }
+
     public String getAddress() {
         return address;
     }

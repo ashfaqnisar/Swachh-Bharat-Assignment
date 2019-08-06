@@ -12,19 +12,22 @@ public class Wastage {
         System.out.println("Type of Wastage: ");
         System.out.println("Please, select the type of wastage. You would like to deposit in the " +
                 "Kiosk");
-        System.out.println("1. Glass");
-        System.out.println("2. Plastic");
-        System.out.println("3. Metal");
+        System.out.println("\t1. Glass");
+        System.out.println("\t2. Plastic");
+        System.out.println("\t3. Metal");
 
         int switch_case = scanner.nextInt();
         switch (switch_case) {
             case 1:
+                System.out.println("Glass has been selected.");
                 wastageType.setGlass(true);
                 break;
             case 2:
+                System.out.println("Plastic has been selected.");
                 wastageType.setPlastic(true);
                 break;
             case 3:
+                System.out.println("Metal has been selected.");
                 wastageType.setMetal(true);
                 break;
             default:
@@ -33,4 +36,6 @@ public class Wastage {
         }
         return wastageType;
     }
+
+
 }
