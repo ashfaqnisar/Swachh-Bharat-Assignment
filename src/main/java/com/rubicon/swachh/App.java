@@ -20,7 +20,8 @@ public class App {
         Report report = new Report();
 
         XStream xstream = new XStream();
-
+        xstream.allowTypesByWildcard(new String[] {"com.rubicon.swachh.**" });//to remove the
+        // warning during the execution.
 
         report.setUser(register.generateRegistrationForm());
         WasteType wasteType = waste.setWasteType(wastage.generateWastageForm());
