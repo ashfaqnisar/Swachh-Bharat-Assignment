@@ -3,7 +3,10 @@ package com.rubicon.swachh;
 import com.rubicon.swachh.models.Report;
 import com.rubicon.swachh.models.Waste;
 import com.rubicon.swachh.models.WasteType;
+
+import com.rubicon.swachh.other.Saver;
 import com.thoughtworks.xstream.XStream;
+import com.thoughtworks.xstream.io.xml.StandardStaxDriver;
 
 
 public class App {
@@ -18,6 +21,8 @@ public class App {
         Coupon coupon = new Coupon();
 
         Report report = new Report();
+
+        Saver saver = new Saver();
 
         XStream xstream = new XStream();
         xstream.allowTypesByWildcard(new String[] {"com.rubicon.swachh.**" });//to remove the
@@ -34,6 +39,8 @@ public class App {
 
         System.out.println(report.getReport());
         System.out.println(XML);
+
+        saver.saveTheData(XML);
 
         Report report1 = (Report)xstream.fromXML(XML);
         System.out.println(report1.getReport());
