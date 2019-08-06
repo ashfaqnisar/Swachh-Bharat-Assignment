@@ -81,20 +81,12 @@
                     <artifactId>maven-shade-plugin</artifactId>
                     <version>3.2.0</version>
                     <executions>
-                        <!-- Attach the shade into the package phase -->
+                        <!-- Attach the shade goal into the package phase -->
                         <execution>
                             <phase>package</phase>
                             <goals>
                                 <goal>shade</goal>
                             </goals>
-                            <configuration>
-                                <transformers>
-                                    <transformer
-                                            implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                        <mainClass>com.rubicon.swachh.App</mainClass>
-                                    </transformer>
-                                </transformers>
-                            </configuration>
                         </execution>
                     </executions>
                 </plugin>

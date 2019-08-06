@@ -5,6 +5,7 @@ import com.rubicon.swachh.models.Waste;
 import com.rubicon.swachh.models.WasteType;
 import com.thoughtworks.xstream.XStream;
 
+
 public class App {
     public static void main(String[] args) {
 //
