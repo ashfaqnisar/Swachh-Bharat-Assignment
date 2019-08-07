@@ -71,7 +71,6 @@ public class Saver {
         }
 
         String time = localDateTime.format(dateTimeFormatter);
-
         String reportFileName = "/report_" +
                         reportData.getUserData().getName().toLowerCase()
                         .trim().replaceAll("\\s+", "_") +

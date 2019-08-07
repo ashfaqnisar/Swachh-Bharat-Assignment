@@ -2,9 +2,7 @@ package com.rubicon.swachh;
 
 import com.rubicon.swachh.models.ReportData;
 import com.rubicon.swachh.models.WasteData;
-import com.rubicon.swachh.models.WasteTypeData;
 import com.rubicon.swachh.other.Saver;
-import com.thoughtworks.xstream.XStream;
 
 
 public class App {//TODO:  Optimize the code to easily understand it.
@@ -25,8 +23,8 @@ public class App {//TODO:  Optimize the code to easily understand it.
         // warning during the execution.
 
         reportData.setUserData(register.generateRegistrationForm());
-        WasteTypeData wasteTypeData = wasteData.setWasteType(wastage.generateWastageForm());
-        wasteData.setBrandTypeData(brand.generateBrandTypeForm(wasteTypeData.getWastageType()));
+        wasteData.setWasteType(wastage.generateWastageForm());
+        wasteData.setBrandTypeData(brand.generateBrandTypeForm(wasteData.getWasteTypeData().getWastageType()));
 
         reportData.setWasteData(wasteData);
         reportData.setCouponData(coupon.generateCouponCode());
