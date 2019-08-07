@@ -17,6 +17,12 @@ public class Saver {
     private DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("HH_mm_ss");
     private XStream xStream = new XStream();
 
+    public Saver(){
+        xStream.allowTypesByWildcard(new String[] {"com.rubicon.swachh.**" });//to remove the
+        xStream.alias("user",UserData.class);
+        xStream.alias("report",ReportData.class);
+    }
+
 
     public void storeTheUser(UserData user) {//TODO: create the same function with  other to make the code efficient
         String userXMLString = xStream.toXML(user);
@@ -51,7 +57,9 @@ public class Saver {
         }
     }
 
-    public void storeTheReport(String reportXMLString, ReportData reportData) {
+    public void storeTheReport( ReportData reportData) {
+        String reportXMLString = xStream.toXML(reportData);
+
         FileOutputStream fileOutputStream = null;
 
         File path = new File("src/main/data/reports/" +
@@ -64,7 +72,7 @@ public class Saver {
 
         String time = localDateTime.format(dateTimeFormatter);
 
-        String reportFileName = "/Report_" +
+        String reportFileName = "/report_" +
                         reportData.getUserData().getName().toLowerCase()
                         .trim().replaceAll("\\s+", "_") +
                         "_" + time + ".xml";

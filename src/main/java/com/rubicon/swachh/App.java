@@ -22,8 +22,6 @@ public class App {//TODO:  Optimize the code to easily understand it.
 
         Saver saver = new Saver();
 
-        XStream xstream = new XStream();
-        xstream.allowTypesByWildcard(new String[] {"com.rubicon.swachh.**" });//to remove the
         // warning during the execution.
 
         reportData.setUserData(register.generateRegistrationForm());
@@ -33,11 +31,10 @@ public class App {//TODO:  Optimize the code to easily understand it.
         reportData.setWasteData(wasteData);
         reportData.setCouponData(coupon.generateCouponCode());
 
-        String reportXML = xstream.toXML(reportData);
 
         System.out.println(reportData.getReport());
 
-        saver.storeTheReport(reportXML, reportData);
+        saver.storeTheReport(reportData);
 
     }
 }

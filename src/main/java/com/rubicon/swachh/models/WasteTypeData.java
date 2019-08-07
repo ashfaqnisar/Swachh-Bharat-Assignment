@@ -53,6 +53,6 @@ public class WasteTypeData {
 
     @Override
     public String toString() {
-        return "\nType of the WasteData:  " + getWastageType();
+        return "\nType of the Waste:  " + getWastageType();
     }
 }
