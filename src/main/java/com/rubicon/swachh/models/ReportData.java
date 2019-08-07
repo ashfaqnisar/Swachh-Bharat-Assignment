@@ -43,21 +43,8 @@ public class ReportData {
         this.couponData = couponData;
     }
 
-    private String getUserData() {
-        return userData.toString();
-    }
-
-    private String getWasteData() {
-        return wasteData.toString();
-    }
-
-
-    private String getCouponUserData() {
-        return couponData.toString();
-    }
-
     public String getReport() {
-        return getUserData() + getWasteData() + getCouponUserData();
+        return userData.toString() + wasteData.toString() + couponData.toString();
     }
 
 }

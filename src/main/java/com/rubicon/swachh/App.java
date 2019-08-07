@@ -6,11 +6,9 @@ import com.rubicon.swachh.models.WasteTypeData;
 import com.rubicon.swachh.other.Saver;
 import com.thoughtworks.xstream.XStream;
 
-import java.io.IOException;
-
 
 public class App {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args){
 
         Register register = new Register();
 
