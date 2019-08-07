@@ -1,39 +1,39 @@
 package com.rubicon.swachh;
 
-import com.rubicon.swachh.models.User;
+import com.rubicon.swachh.models.UserData;
 
 import java.util.Scanner;
 
 public class Register {
 
 
-    private User user = new User();
+    private UserData userData = new UserData();
     private Scanner mScanner = new Scanner(System.in);
 
 
-    User generateRegistrationForm() {
+    UserData generateRegistrationForm() {
         System.out.println("Registration: ");
         System.out.print("Hello There, Please provide your name: ");
-        user.setName(mScanner.nextLine());
+        userData.setName(mScanner.nextLine());
 
         System.out.print("\n");
 
-        System.out.print("Hi " + user.getName() + ", can you please provide your email address: ");
+        System.out.print("Hi " + userData.getName() + ", can you please provide your email address: ");
         //System.out.print("Don't Worry, we are not going to spam you");
-        user.setEmail(mScanner.nextLine());
+        userData.setEmail(mScanner.nextLine());
 
         System.out.print("\n");
 
-        System.out.print("Hey " + user.getName() + ", please provide your number: ");
-        user.setNumber(mScanner.nextLong());
+        System.out.print("Hey " + userData.getName() + ", please provide your number: ");
+        userData.setNumber(mScanner.nextLong());
 
         System.out.print("\n");
 
-        System.out.print("Hey " + user.getName() + ", can you provide your address: ");
-        user.setAddress(mScanner.next());
+        System.out.print("Hey " + userData.getName() + ", can you provide your address: ");
+        userData.setAddress(mScanner.next());
 
         System.out.print("\n");
 
-        return user;
+        return userData;
     }
 }

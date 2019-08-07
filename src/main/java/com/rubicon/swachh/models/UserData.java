@@ -1,20 +1,20 @@
 package com.rubicon.swachh.models;
 
-public class User {
+public class UserData {
     private String name;
     private String email;
     private Long number;
     private String address;
 
-    public User() {
+    public UserData() {
     }
 
-    User(String email, Long number) {
+    UserData(String email, Long number) {
         this.email = email;
         this.number = number;
     }
 
-    User(String name, String email, String address, long number) {
+    UserData(String name, String email, String address, long number) {
         this.name = name;
         this.email = email;
         this.address = address;
@@ -47,7 +47,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "\nUser Information: " + "\n" +
+        return "\nUserData Information: " + "\n" +
                 "Name:     " + getName() + "\n" +
                 "Email:    " + getEmail() + "\n" +
                 "Number:   " + getNumber() + "\n"+

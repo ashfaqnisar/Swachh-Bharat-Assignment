@@ -1,15 +1,15 @@
 package com.rubicon.swachh;
 
-import com.rubicon.swachh.models.WasteType;
+import com.rubicon.swachh.models.WasteTypeData;
 
 import java.util.Scanner;
 
 public class Wastage {
     private Scanner scanner = new Scanner(System.in);
-    private WasteType wasteType = new WasteType();
+    private WasteTypeData wasteTypeData = new WasteTypeData();
 
-    WasteType generateWastageForm() {
-        System.out.println("Type of the Waste: ");
+    WasteTypeData generateWastageForm() {
+        System.out.println("Type of the WasteData: ");
         System.out.println("Please select the type of wastage, which you will be depositing in " +
                 "the Kiosk");
         System.out.println("\t1. Glass");
@@ -20,20 +20,20 @@ public class Wastage {
         switch (switch_case) {
             case 1:
                 System.out.println("Glass has been selected.\n");
-                wasteType.setGlass(true);
+                wasteTypeData.setGlass(true);
                 break;
             case 2:
                 System.out.println("Plastic has been selected.\n");
-                wasteType.setPlastic(true);
+                wasteTypeData.setPlastic(true);
                 break;
             case 3:
                 System.out.println("Metal has been selected.\n");
-                wasteType.setMetal(true);
+                wasteTypeData.setMetal(true);
                 break;
             default:
                 System.out.println("Please select the correct option.\n");
                 break;
         }
-        return wasteType;
+        return wasteTypeData;
     }
 }

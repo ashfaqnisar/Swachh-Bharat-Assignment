@@ -1,6 +1,6 @@
 package com.rubicon.swachh.other;
 
-import com.rubicon.swachh.models.Report;
+import com.rubicon.swachh.models.ReportData;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -15,6 +15,7 @@ public class Saver {
 
     private LocalDateTime localDateTime = LocalDateTime.now();
     private DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("hh_mm_ss");
+
 
 
     public void storeTheUser(String user){
@@ -41,7 +42,7 @@ public class Saver {
             }
         }
     }
-    public void storeTheReport(String reportXML, Report report) {
+    public void storeTheReport(String reportXML, ReportData reportData) {
         FileOutputStream fileOutputStream = null;
 
         File path = new File("src/main/data/reports/" +
@@ -54,7 +55,7 @@ public class Saver {
 
         String time = localDateTime.format(dateTimeFormatter);
 
-        String reportName = "/Report_"+ report.getUser().getName()+
+        String reportName = "/Report_"+ reportData.getUserData().getName()+
                 "_" + time + ".xml";
         try {
             fileOutputStream = new FileOutputStream( path+reportName,false);

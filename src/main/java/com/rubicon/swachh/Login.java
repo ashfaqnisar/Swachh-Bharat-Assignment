@@ -1,26 +1,26 @@
 package com.rubicon.swachh;
 
-import com.rubicon.swachh.models.User;
+import com.rubicon.swachh.models.UserData;
 
 import java.util.Scanner;
 
 
 public class Login {
 
-    private User user = new User();
+    private UserData userData = new UserData();
     private Scanner mScanner = new Scanner(System.in);
 
-    User generateLoginForm() {
+    UserData generateLoginForm() {
         System.out.print("Login \n");
 
         System.out.print("Hello there, can you provide your email id: ");
-        user.setEmail(mScanner.nextLine());
+        userData.setEmail(mScanner.nextLine());
 
         System.out.print("\n");
 
         System.out.print("Thank you, please provide the number: ");
-        user.setNumber(mScanner.nextLong());
+        userData.setNumber(mScanner.nextLong());
 
-        return user;
+        return userData;
     }
 }

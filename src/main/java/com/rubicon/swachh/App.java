@@ -1,8 +1,8 @@
 package com.rubicon.swachh;
 
-import com.rubicon.swachh.models.Report;
-import com.rubicon.swachh.models.Waste;
-import com.rubicon.swachh.models.WasteType;
+import com.rubicon.swachh.models.ReportData;
+import com.rubicon.swachh.models.WasteData;
+import com.rubicon.swachh.models.WasteTypeData;
 import com.rubicon.swachh.other.Saver;
 import com.thoughtworks.xstream.XStream;
 
@@ -14,13 +14,13 @@ public class App {
 
         Register register = new Register();
 
-        Waste waste = new Waste();
+        WasteData wasteData = new WasteData();
         Wastage wastage = new Wastage();
         Brand brand = new Brand();
 
         Coupon coupon = new Coupon();
 
-        Report report = new Report();
+        ReportData reportData = new ReportData();
 
         Saver saver = new Saver();
 
@@ -28,18 +28,18 @@ public class App {
         xstream.allowTypesByWildcard(new String[] {"com.rubicon.swachh.**" });//to remove the
         // warning during the execution.
 
-        report.setUser(register.generateRegistrationForm());
-        WasteType wasteType = waste.setWasteType(wastage.generateWastageForm());
-        waste.setBrandType(brand.generateBrandTypeForm(wasteType.getWastageType()));
+        reportData.setUserData(register.generateRegistrationForm());
+        WasteTypeData wasteTypeData = wasteData.setWasteType(wastage.generateWastageForm());
+        wasteData.setBrandTypeData(brand.generateBrandTypeForm(wasteTypeData.getWastageType()));
 
-        report.setWaste(waste);
-        report.setCouponData(coupon.generateCouponCode());
+        reportData.setWasteData(wasteData);
+        reportData.setCouponData(coupon.generateCouponCode());
 
-        String reportXML = xstream.toXML(report);
+        String reportXML = xstream.toXML(reportData);
 
-        System.out.println(report.getReport());
+        System.out.println(reportData.getReport());
 
-        saver.storeTheReport(reportXML,report);
+        saver.storeTheReport(reportXML, reportData);
 
     }
 }

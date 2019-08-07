@@ -1,11 +1,11 @@
 package com.rubicon.swachh.util;
 
-import com.rubicon.swachh.models.BrandType;
+import com.rubicon.swachh.models.BrandTypeData;
 
 public class BrandsConstants {
-    public static final BrandType Sprite = new BrandType("Sprite",45);
-    public static final BrandType Coke = new BrandType("Coke",32);
-    public static final BrandType ThumbsUp = new BrandType("Thumbsup",15);
-    public static final BrandType Miranda = new BrandType("Miranda",20);
-    public static final BrandType Other = new BrandType("Other",24);
+    public static final BrandTypeData Sprite = new BrandTypeData("Sprite",45);
+    public static final BrandTypeData Coke = new BrandTypeData("Coke",32);
+    public static final BrandTypeData ThumbsUp = new BrandTypeData("Thumbsup",15);
+    public static final BrandTypeData Miranda = new BrandTypeData("Miranda",20);
+    public static final BrandTypeData Other = new BrandTypeData("Other",24);
 }

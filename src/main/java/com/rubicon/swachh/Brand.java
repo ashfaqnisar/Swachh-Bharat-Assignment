@@ -1,15 +1,15 @@
 package com.rubicon.swachh;
 
-import com.rubicon.swachh.models.BrandType;
+import com.rubicon.swachh.models.BrandTypeData;
 
 import java.util.Scanner;
 
 public class Brand {
 
     private Scanner scanner = new Scanner(System.in);
-    private BrandType brandType = new BrandType();
+    private BrandTypeData brandTypeData = new BrandTypeData();
 
-    BrandType generateBrandTypeForm(String wastageType){
+    BrandTypeData generateBrandTypeForm(String wastageType){
         if (!wastageType.equals("Default")){
             System.out.println("Please, provide the brand of the "+ wastageType + " if known, " +
                     "else select" +
@@ -27,29 +27,29 @@ public class Brand {
             switch (switch_case){
                 case 1:
                     System.out.println("Sprite Brand has been selected.\n");
-                    brandType.setSpriteBrand(true);
+                    brandTypeData.setSpriteBrand(true);
                     break;
                 case 2:
                     System.out.println("Coke Brand has been selected.\n");
-                    brandType.setCokeBrand(true);
+                    brandTypeData.setCokeBrand(true);
                     break;
                 case 3:
                     System.out.println("Diet Coke Brand has been selected.\n");
-                    brandType.setDietCokeBrand(true);
+                    brandTypeData.setDietCokeBrand(true);
                     break;
                 case 4:
                     System.out.println("ThumbsUp Brand has been selected.\n");
-                    brandType.setThumbsUpBrand(true);
+                    brandTypeData.setThumbsUpBrand(true);
                     break;
                 case 5:
                     System.out.println("Other Brand has been selected.\n");
-                    brandType.setOtherBrand(true);
+                    brandTypeData.setOtherBrand(true);
                     break;
                 default:
                     System.out.println("Please, select the correct option.\n");
                     break;
             }
         }
-        return brandType;
+        return brandTypeData;
     }
 }
