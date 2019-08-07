@@ -7,7 +7,7 @@ import com.rubicon.swachh.other.Saver;
 import com.thoughtworks.xstream.XStream;
 
 
-public class App {
+public class App {//TODO:  Optimize the code to easily understand it.
     public static void main(String[] args){
 
         Register register = new Register();

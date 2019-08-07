@@ -14,27 +14,27 @@ import java.time.format.DateTimeFormatter;
 public class Saver {
 
     private LocalDateTime localDateTime = LocalDateTime.now();
-    private DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("hh_mm_ss");
+    private DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("HH_mm_ss");
     private XStream xStream = new XStream();
 
 
     public void storeTheUser(UserData user) {//TODO: create the same function with  other to make the code efficient
-        String userXML = xStream.toXML(user);
+        String userXMLString = xStream.toXML(user);
 
         File path = new File("src/main/data/users");
         if (!path.exists()) {
             path.mkdirs();
         }
+        String userFileName = user.getName().toLowerCase().trim().replaceAll("\\s+","_")+".xml";
 
-        File userXMLPath = new File(path + "/" + user.getName() + ".xml");
+        File userXMLFile = new File(path + "/" + userFileName);
         FileOutputStream fileOutputStream = null;
 
-        System.out.print(path + "/" + user.getName() + ".xml");
         try {
-            fileOutputStream = new FileOutputStream(userXMLPath);
+            fileOutputStream = new FileOutputStream(userXMLFile,false);
             fileOutputStream.write("<?xml version=\"1.0\"?>\n".getBytes(StandardCharsets.UTF_8));
 
-            byte[] bytes = userXML.getBytes(StandardCharsets.UTF_8);
+            byte[] bytes = userXMLString.getBytes(StandardCharsets.UTF_8);
             fileOutputStream.write(bytes);
 
 
@@ -51,7 +51,7 @@ public class Saver {
         }
     }
 
-    public void storeTheReport(String reportXML, ReportData reportData) {
+    public void storeTheReport(String reportXMLString, ReportData reportData) {
         FileOutputStream fileOutputStream = null;
 
         File path = new File("src/main/data/reports/" +
@@ -64,16 +64,20 @@ public class Saver {
 
         String time = localDateTime.format(dateTimeFormatter);
 
-        String reportName = "/Report_" + reportData.getUserData().getName() +
-                "_" + time + ".xml";
+        String reportFileName = "/Report_" +
+                        reportData.getUserData().getName().toLowerCase()
+                        .trim().replaceAll("\\s+", "_") +
+                        "_" + time + ".xml";
+        File reportXMLFile = new File(path+reportFileName);
+
         try {
-            fileOutputStream = new FileOutputStream(path + reportName, false);
+            fileOutputStream = new FileOutputStream(reportXMLFile, false);
 
             fileOutputStream.write("<?xml version=\"1.0\"?>\n".getBytes(StandardCharsets.UTF_8));
 
-            byte[] bytes = reportXML.getBytes(StandardCharsets.UTF_8);
+            byte[] bytes = reportXMLString.getBytes(StandardCharsets.UTF_8);
             fileOutputStream.write(bytes);
-            
+
         } catch (Exception e) {
             System.err.println("Error in storing the report: " + e.getMessage());
         } finally {
