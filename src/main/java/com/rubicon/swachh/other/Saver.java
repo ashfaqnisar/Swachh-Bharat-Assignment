@@ -2,6 +2,7 @@ package com.rubicon.swachh.other;
 
 import com.rubicon.swachh.models.Report;
 
+import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -43,17 +44,20 @@ public class Saver {
     public void storeTheReport(String reportXML, Report report) {
         FileOutputStream fileOutputStream = null;
 
-        String path = "src/main/data/reports/" +
+        File path = new File("src/main/data/reports/" +
                 localDateTime.getYear()+"/"+
                 localDateTime.getMonth()+"/"+
-                localDateTime.getDayOfMonth()+"/";
+                localDateTime.getDayOfMonth());
+        if (!path.exists()){
+            path.mkdirs();
+        }
 
         String time = localDateTime.format(dateTimeFormatter);
 
+        String reportName = "/Report_"+ report.getUser().getName()+
+                "_" + time + ".xml";
         try {
-            fileOutputStream = new FileOutputStream( path+"Report_"+
-                                    report.getUser().getName()+
-                                    "_" + time + ".xml",false);
+            fileOutputStream = new FileOutputStream( path+reportName,false);
 
             fileOutputStream.write("<?xml version=\"1.0\"?>\n".getBytes(StandardCharsets.UTF_8));
 
