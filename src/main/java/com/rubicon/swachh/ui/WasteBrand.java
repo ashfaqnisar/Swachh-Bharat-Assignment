@@ -48,6 +48,8 @@ class WasteBrand {
                     System.out.println("Please, select the correct option.\n");
                     break;
             }
+        }else{
+            wasteBrandData.setOtherBrand(true);
         }
     }
 
