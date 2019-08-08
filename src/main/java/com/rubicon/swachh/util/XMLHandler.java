@@ -21,6 +21,19 @@ public class XMLHandler {
         }
         return false;
     }
+
+    public static Element createChild(Element parentElement, String childName) {
+        Element child = null;
+        if ((parentElement != null) && (!isVoid(childName))) {
+            child = parentElement.getOwnerDocument().createElement(childName);
+            parentElement.appendChild(child);
+
+        }
+        return child;
+    }
+
+
+
     public static void write2File(Element element, String fileName) throws Exception {
         if (!isVoid(fileName)) {
             FileWriter sw = new FileWriter(fileName);
