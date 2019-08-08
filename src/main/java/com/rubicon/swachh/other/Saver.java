@@ -14,7 +14,7 @@ import java.time.format.DateTimeFormatter;
 public class Saver {
 
     private LocalDateTime localDateTime = LocalDateTime.now();
-    private DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("HH_mm_ss");
+    private DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("HH_mm_ss_dd_mm_yyyy_");
     private XStream xStream = new XStream();
 
     public Saver(){
@@ -62,10 +62,7 @@ public class Saver {
 
         FileOutputStream fileOutputStream = null;
 
-        File path = new File("src/main/data/reports/" +
-                localDateTime.getYear() + "/" +
-                localDateTime.getMonth() + "/" +
-                localDateTime.getDayOfMonth());
+        File path = new File("src/main/data/reports/");
         if (!path.exists()) {
             path.mkdirs();
         }
