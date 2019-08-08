@@ -24,17 +24,17 @@ public class Saver {
     private Document docUser = XMLHandler.createDocument("User");
 
     public Saver() {
-        xStream.allowTypesByWildcard(new String[] {"com.rubicon.swachh.**" });//to remove the
-        xStream.alias("user",UserData.class);
-        xStream.alias("report",ReportData.class);
+        xStream.allowTypesByWildcard(new String[]{"com.rubicon.swachh.**"});//to remove the
+        xStream.alias("user", UserData.class);
+        xStream.alias("report", ReportData.class);
     }
 
     public void storeTheUser(UserData userData) throws Exception {
 
         String userFilePath = "src/main/data/users/";
-        String userFileName = userData.getName().toLowerCase().trim().replaceAll("\\s+","_")+".xml";
+        String userFileName = userData.getName().toLowerCase().trim().replaceAll("\\s+", "_") + ".xml";
 
-        String usersXMLFilePath = userFilePath+userFileName;
+        String usersXMLFilePath = userFilePath + userFileName;
 
         Element eleUser = docUser.getDocumentElement();
         Element eleUserName = XMLHandler.createChild(eleUser, "Name");
@@ -54,7 +54,7 @@ public class Saver {
     }
 
 
-    public void storeTheReport( ReportData reportData) {
+    public void storeTheReport(ReportData reportData) {
         String reportXMLString = xStream.toXML(reportData);
 
         FileOutputStream fileOutputStream = null;
@@ -66,10 +66,10 @@ public class Saver {
 
         String time = localDateTime.format(dateTimeFormatter);
         String reportFileName = "/report_" +
-                        reportData.getUserData().getName().toLowerCase()
+                reportData.getUserData().getName().toLowerCase()
                         .trim().replaceAll("\\s+", "_") +
-                        "_" + time + ".xml";
-        File reportXMLFile = new File(path+reportFileName);
+                "_" + time + ".xml";
+        File reportXMLFile = new File(path + reportFileName);
 
         try {
             fileOutputStream = new FileOutputStream(reportXMLFile, false);

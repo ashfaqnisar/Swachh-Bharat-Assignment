@@ -1,4 +1,4 @@
-package com.rubicon.swachh;
+package com.rubicon.swachh.ui;
 
 import com.rubicon.swachh.models.BrandTypeData;
 
@@ -9,9 +9,9 @@ class BrandType {
     private Scanner scanner = new Scanner(System.in);
     private BrandTypeData brandTypeData = new BrandTypeData();
 
-    BrandTypeData generateBrandTypeForm(String wastageType){
-        if (!wastageType.equals("Default")){
-            System.out.println("Please, provide the brand of the "+ wastageType + " if known, " +
+    BrandTypeData generateBrandTypeForm(String wastageType) {
+        if (!wastageType.equals("Default")) {
+            System.out.println("Please, provide the brand of the " + wastageType + " if known, " +
                     "else select" +
                     " the other option");
 
@@ -24,7 +24,7 @@ class BrandType {
             System.out.println("Enter the respective number for the brand: ");
             int switch_case = scanner.nextInt();
 
-            switch (switch_case){
+            switch (switch_case) {
                 case 1:
                     System.out.println("Sprite Brand has been selected.\n");
                     brandTypeData.setSpriteBrand(true);

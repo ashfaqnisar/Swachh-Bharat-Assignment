@@ -3,7 +3,7 @@ package com.rubicon.swachh.models;
 public class CouponData {
     private String couponCode;
 
-    public CouponData(){
+    public CouponData() {
     }
 
     public CouponData(String couponCode) {
@@ -20,6 +20,6 @@ public class CouponData {
 
     @Override
     public String toString() {
-        return "\nCoupon Code: " + getCouponCode() ;
+        return "\nCoupon Code: " + getCouponCode();
     }
 }

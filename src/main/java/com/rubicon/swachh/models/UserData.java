@@ -51,7 +51,7 @@ public class UserData {
         return "\nUser Information: " + "\n" +
                 "Name:     " + getName() + "\n" +
                 "Email:    " + getEmail() + "\n" +
-                "Number:   " + getNumber() + "\n"+
+                "Number:   " + getNumber() + "\n" +
                 "Address:  " + getAddress() + "\n";
     }
 

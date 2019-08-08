@@ -1,14 +1,14 @@
-package com.rubicon.swachh;
+package com.rubicon.swachh.ui;
 
 import com.rubicon.swachh.models.CouponData;
 
 import java.security.SecureRandom;
 import java.util.Random;
 
-class Coupon {
+public class Coupon {
     private CouponData couponData = new CouponData();
 
-    Coupon(){
+    public Coupon() {
         char[] chars = "abcdefghijklmnopqrstuvwxyz1234567890".toCharArray();
         StringBuilder sb = new StringBuilder();
         Random random = new SecureRandom();
@@ -19,7 +19,7 @@ class Coupon {
         couponData.setCouponCode(sb.toString());
     }
 
-    CouponData getCouponCode() {
+    public CouponData getCouponData() {
         return couponData;
     }
 

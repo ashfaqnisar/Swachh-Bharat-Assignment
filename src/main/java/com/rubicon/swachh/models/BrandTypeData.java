@@ -10,6 +10,14 @@ public class BrandTypeData {
     private String brandName = "";
     private int brandCost = 0;
 
+    public BrandTypeData() {
+    }
+
+    public BrandTypeData(String brandName, int brandCost) {
+        this.brandName = brandName;
+        this.brandCost = brandCost;
+    }
+
     public boolean isSpriteBrand() {
         return SpriteBrand;
     }
@@ -60,14 +68,6 @@ public class BrandTypeData {
         setBrandCost(15);
     }
 
-    public BrandTypeData() {
-    }
-
-    public BrandTypeData(String brandName, int brandCost) {
-        this.brandName = brandName;
-        this.brandCost = brandCost;
-    }
-
     public String getBrandName() {
         return brandName;
     }
@@ -87,8 +87,6 @@ public class BrandTypeData {
 
     @Override
     public String toString() {
-        return  "\nBrand of the Waste:  "+ brandName+
-                "\nWeight of the Waste: "+ brandCost + "gm\n";
-
+        return "\nBrand of the Waste:  " + brandName;
     }
 }

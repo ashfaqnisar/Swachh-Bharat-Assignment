@@ -40,8 +40,8 @@ public class ReportData {
         this.couponData = couponData;
     }
 
-    public String getReport() {
+    @Override
+    public String toString() {
         return userData.toString() + wasteData.toString() + couponData.toString();
     }
-
 }

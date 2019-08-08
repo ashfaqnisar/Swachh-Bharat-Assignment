@@ -38,14 +38,12 @@ public class WasteTypeData {
         this.plastic = plastic;
     }
 
-    public String getWastageType(){
-        if (isGlass()){
+    public String getWastageType() {
+        if (isGlass()) {
             return "Glass";
-        }
-        else if (isMetal()){
+        } else if (isMetal()) {
             return "Metal";
-        }
-        else if (isPlastic()){
+        } else if (isPlastic()) {
             return "Plastic";
         }
         return "Default";

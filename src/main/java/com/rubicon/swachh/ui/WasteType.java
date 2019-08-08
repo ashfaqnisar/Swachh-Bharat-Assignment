@@ -1,4 +1,4 @@
-package com.rubicon.swachh;
+package com.rubicon.swachh.ui;
 
 import com.rubicon.swachh.models.WasteTypeData;
 
@@ -7,7 +7,7 @@ import java.util.Scanner;
 class WasteType {
     private WasteTypeData wasteTypeData = new WasteTypeData();
 
-    WasteType(){
+    WasteType() {
         System.out.println("Type of the WasteData: ");
         System.out.println("Please select the type of wastage, which you will be depositing in " +
                 "the Kiosk");
@@ -37,14 +37,12 @@ class WasteType {
     }
 
 
-    String getTheTypeOfWaste(){
-        if (wasteTypeData.isGlass()){
+    String getTheTypeOfWaste() {
+        if (wasteTypeData.isGlass()) {
             return "Glass";
-        }
-        else if (wasteTypeData.isMetal()){
+        } else if (wasteTypeData.isMetal()) {
             return "Metal";
-        }
-        else if (wasteTypeData.isPlastic()){
+        } else if (wasteTypeData.isPlastic()) {
             return "Plastic";
         }
         return "Unknown";

@@ -2,9 +2,12 @@ package com.rubicon.swachh;
 
 import com.rubicon.swachh.models.ReportData;
 import com.rubicon.swachh.other.Saver;
+import com.rubicon.swachh.ui.Coupon;
+import com.rubicon.swachh.ui.Register;
+import com.rubicon.swachh.ui.Waste;
 
 
-public class App { //TODO:  Optimize the code to easily understand it.
+public class App {
 
     public static void main(String[] args) throws Exception {
 
@@ -14,13 +17,11 @@ public class App { //TODO:  Optimize the code to easily understand it.
 
         Coupon coupon = new Coupon();
 
-        ReportData reportData = new ReportData(register.getUserData(),waste.getWasteData(),coupon.getCouponCode());
+        ReportData reportData = new ReportData(register.getUserData(), waste.getWastageData(), coupon.getCouponData());
+
+        System.out.println(reportData.toString());
 
         Saver saver = new Saver();
-
-
-        System.out.println(reportData.getReport());
-
         saver.storeTheReport(reportData);
 
     }
