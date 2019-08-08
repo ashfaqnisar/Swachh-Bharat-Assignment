@@ -79,7 +79,7 @@ public class XMLHandler {
                 for (int i = 0; i < list.getLength(); i++) {
                     Node n = list.item(i);
                     if ((n instanceof Element)) {
-                        children.add((Element)n);
+                        children.add((Element) n);
                     }
                 }
             }

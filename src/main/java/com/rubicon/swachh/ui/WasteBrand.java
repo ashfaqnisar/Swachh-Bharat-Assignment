@@ -1,15 +1,15 @@
 package com.rubicon.swachh.ui;
 
-import com.rubicon.swachh.models.BrandTypeData;
+import com.rubicon.swachh.models.WasteBrandData;
 
 import java.util.Scanner;
 
-class BrandType {
+class WasteBrand {
 
     private Scanner scanner = new Scanner(System.in);
-    private BrandTypeData brandTypeData = new BrandTypeData();
+    private WasteBrandData wasteBrandData = new WasteBrandData();
 
-    BrandTypeData generateBrandTypeForm(String wastageType) {
+    WasteBrandData generateBrandTypeForm(String wastageType) {
         if (!wastageType.equals("Default")) {
             System.out.println("Please, provide the brand of the " + wastageType + " if known, " +
                     "else select" +
@@ -21,35 +21,34 @@ class BrandType {
             System.out.println("\t4. Thumbs Up");
             System.out.println("\t5. Other");
 
-            System.out.println("Enter the respective number for the brand: ");
             int switch_case = scanner.nextInt();
 
             switch (switch_case) {
                 case 1:
                     System.out.println("Sprite Brand has been selected.\n");
-                    brandTypeData.setSpriteBrand(true);
+                    wasteBrandData.setSpriteBrand(true);
                     break;
                 case 2:
                     System.out.println("Coke Brand has been selected.\n");
-                    brandTypeData.setCokeBrand(true);
+                    wasteBrandData.setCokeBrand(true);
                     break;
                 case 3:
                     System.out.println("Diet Coke Brand has been selected.\n");
-                    brandTypeData.setDietCokeBrand(true);
+                    wasteBrandData.setDietCokeBrand(true);
                     break;
                 case 4:
                     System.out.println("ThumbsUp Brand has been selected.\n");
-                    brandTypeData.setThumbsUpBrand(true);
+                    wasteBrandData.setThumbsUpBrand(true);
                     break;
                 case 5:
                     System.out.println("Other Brand has been selected.\n");
-                    brandTypeData.setOtherBrand(true);
+                    wasteBrandData.setOtherBrand(true);
                     break;
                 default:
                     System.out.println("Please, select the correct option.\n");
                     break;
             }
         }
-        return brandTypeData;
+        return wasteBrandData;
     }
 }

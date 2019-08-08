@@ -3,11 +3,15 @@ package com.rubicon.swachh.util;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
+import javax.xml.parsers.ParserConfigurationException;
 import java.util.List;
 
 public class XMLHandlerTest {
-    private Document docUsers = XMLHandler.createDocument("Users");
+    private Document docUsers = (Document) XMLHandler.getDocumentBuilder();
     private Element eleUsers = docUsers.getDocumentElement();
+
+    public XMLHandlerTest() throws ParserConfigurationException {
+    }
 
     public void createNewUser(String userName, String userAge) throws Exception {
         Element eleUser = XMLHandler.createChild(eleUsers, "User");
@@ -19,6 +23,7 @@ public class XMLHandlerTest {
 
         XMLHandler.write2File(eleUsers, "Test.xml");
     }
+
     public void fetchTheUserAge(String userName) throws Exception {
         Document docUsers = XMLHandler.createFromFileOrUrl("Test.xml");
         Element eleUsers = docUsers.getDocumentElement();
@@ -28,8 +33,8 @@ public class XMLHandlerTest {
         for (Object objectUser : listUsers) {
             Element eleUser = (Element) objectUser;
             Element eleUserName = XMLHandler.getChildElement(eleUser, "Name");
-            if (eleUserName.getTextContent().equals(userName)){
-                System.out.print(userName+"'s, age is "+XMLHandler.getChildElement(eleUser,"Age").getTextContent());
+            if (eleUserName.getTextContent().equals(userName)) {
+                System.out.print(userName + "'s, age is " + XMLHandler.getChildElement(eleUser, "Age").getTextContent());
             }
         }
     }

@@ -8,8 +8,7 @@ class WasteType {
     private WasteTypeData wasteTypeData = new WasteTypeData();
 
     WasteType() {
-        System.out.println("Type of the WasteData: ");
-        System.out.println("Please select the type of wastage, which you will be depositing in " +
+        System.out.println("\nPlease select the type of wastage, which you will be depositing in " +
                 "the Kiosk");
         System.out.println("\t1. Glass");
         System.out.println("\t2. Plastic");

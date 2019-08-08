@@ -2,15 +2,15 @@ package com.rubicon.swachh.models;
 
 public class WasteData {
     private WasteTypeData wasteTypeData;
-    private BrandTypeData brandTypeData;
+    private WasteBrandData wasteBrandData;
     private int Weight;
 
     public WasteData() {
     }
 
-    public WasteData(WasteTypeData wasteTypeData, BrandTypeData brandTypeData) {
+    public WasteData(WasteTypeData wasteTypeData, WasteBrandData wasteBrandData) {
         this.wasteTypeData = wasteTypeData;
-        this.brandTypeData = brandTypeData;
+        this.wasteBrandData = wasteBrandData;
     }
 
     public WasteTypeData getWasteTypeData() {
@@ -21,12 +21,12 @@ public class WasteData {
         this.wasteTypeData = wasteTypeData;
     }
 
-    public BrandTypeData getBrandTypeData() {
-        return brandTypeData;
+    public WasteBrandData getWasteBrandData() {
+        return wasteBrandData;
     }
 
-    public void setBrandTypeData(BrandTypeData brandTypeData) {
-        this.brandTypeData = brandTypeData;
+    public void setWasteBrandData(WasteBrandData wasteBrandData) {
+        this.wasteBrandData = wasteBrandData;
     }
 
     public int getWeight() {
@@ -39,7 +39,7 @@ public class WasteData {
 
     @Override
     public String toString() {
-        return wasteTypeData.toString() + brandTypeData.toString() +
+        return wasteTypeData.toString() + wasteBrandData.toString() +
                 "\nWeight of the Waste: " + getWeight() + "gm\n";
     }
 }

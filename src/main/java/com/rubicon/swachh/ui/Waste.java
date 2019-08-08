@@ -9,10 +9,10 @@ public class Waste {
         wasteData = new WasteData();
         WasteWeight wasteWeight = new WasteWeight();
         WasteType wasteType = new WasteType();
-        BrandType brandType = new BrandType();
+        WasteBrand brandType = new WasteBrand();
         wasteData.setWeight(wasteWeight.getWeight());
         wasteData.setWasteType(wasteType.getWasteTypeData());
-        wasteData.setBrandTypeData(brandType.generateBrandTypeForm(wasteType.getTheTypeOfWaste()));
+        wasteData.setWasteBrandData(brandType.generateBrandTypeForm(wasteType.getTheTypeOfWaste()));
     }
 
     public WasteData getWastageData() {

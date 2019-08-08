@@ -1,6 +1,6 @@
 package com.rubicon.swachh.models;
 
-public class BrandTypeData {
+public class WasteBrandData {
     private boolean SpriteBrand = false;
     private boolean CokeBrand = false;
     private boolean DietCokeBrand = false;
@@ -10,10 +10,10 @@ public class BrandTypeData {
     private String brandName = "";
     private int brandCost = 0;
 
-    public BrandTypeData() {
+    public WasteBrandData() {
     }
 
-    public BrandTypeData(String brandName, int brandCost) {
+    public WasteBrandData(String brandName, int brandCost) {
         this.brandName = brandName;
         this.brandCost = brandCost;
     }
