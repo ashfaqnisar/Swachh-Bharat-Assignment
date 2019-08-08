@@ -3,6 +3,7 @@ package com.rubicon.swachh;
 import com.rubicon.swachh.models.UserData;
 import com.rubicon.swachh.other.Saver;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Register {
@@ -12,8 +13,7 @@ public class Register {
     private Scanner mScanner = new Scanner(System.in);
     private Saver saver = new Saver();
 
-
-    UserData generateRegistrationForm() {
+    public Register() throws Exception {
         System.out.println("Registration: ");
         System.out.print("Hello There, Please provide your name: ");
         userData.setName(mScanner.nextLine());
@@ -35,6 +35,11 @@ public class Register {
         userData.setAddress(mScanner.next());
 
         System.out.print("\n");
+    }
+
+
+    UserData generateRegistrationForm() throws Exception {
+
 
         saver.storeTheUser(userData);
 
