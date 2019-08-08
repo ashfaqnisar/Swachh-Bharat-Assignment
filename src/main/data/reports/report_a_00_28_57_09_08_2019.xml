@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report>
+    <User>
+        <Name>a</Name>
+        <Email>a</Email>
+        <Number>1</Number>
+        <Address>a</Address>
+    </User>
+    <Waste>
+        <Type>Glass</Type>
+        <Brand>Sprite</Brand>
+        <Weight>38</Weight>
+    </Waste>
+    <Coupon>
+        <CouponCode>emjms0s</CouponCode>
+        <CouponPoints>To be Updated</CouponPoints>
+    </Coupon>
+</Report>
