@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report>
+    <User>
+        <Name>Arif</Name>
+        <Email>arif@gmail.com</Email>
+        <Number>9676290491</Number>
+        <Address>Hyderabad</Address>
+    </User>
+    <Waste>
+        <Type>Glass</Type>
+        <Brand>Diet Coke</Brand>
+        <Weight>25</Weight>
+    </Waste>
+    <Coupon>
+        <CouponCode>tr82wka</CouponCode>
+        <CouponPoints>To be Updated</CouponPoints>
+    </Coupon>
+</Report>

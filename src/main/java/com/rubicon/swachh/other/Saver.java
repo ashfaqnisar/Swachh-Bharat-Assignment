@@ -10,25 +10,25 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class Saver {
-
-
     private LocalDateTime localDateTime = LocalDateTime.now();
     private DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("HH_mm_ss_dd_MM_yyyy");
 
-    private Document docUser = XMLHandler.createDocument("User");
     private Document docReport = XMLHandler.createDocument("Report");
 
     public Saver() {
     }
 
     public void storeTheUser(UserData userData) throws Exception {
-
         String userFilePath = "src/main/data/users/";
-        String userFileName = userData.getName().toLowerCase().trim().replaceAll("\\s+", "_") + ".xml";
+        /*String userFileName = userData.getName().toLowerCase().trim().replaceAll("\\s+", "_") +
+                ".xml";*/
+        String userFile = userFilePath + "Users.xml";
 
-        String userFile = userFilePath + userFileName;
 
-        Element eleUser = docUser.getDocumentElement();
+        Document docUsers = XMLHandler.createFromFileOrUrl(userFile);
+        Element eleUsers=docUsers.getDocumentElement();
+
+        Element eleUser = XMLHandler.createChild(eleUsers,"User");
         Element eleUserName = XMLHandler.createChild(eleUser, "Name");
         Element eleUserEmail = XMLHandler.createChild(eleUser, "Email");
         Element eleUserNumber = XMLHandler.createChild(eleUser, "Number");
@@ -41,15 +41,15 @@ public class Saver {
         eleUserAddress.setTextContent(userData.getAddress());
 
 
-        XMLHandler.write2File(eleUser, userFile);
+        XMLHandler.write2File(docUsers, userFile);
     }
 
 
     public void storeTheReport(ReportData reportData) throws Exception {
         String time = localDateTime.format(dateTimeFormatter);
         String reportFilePath = "src/main/data/reports/";
-        String reportFileName = "report_"+reportData.getUserData().getName().toLowerCase().trim().replaceAll(
-                "\\s+", "_") +"_"+ time + ".xml";
+        String reportFileName = "report_" + reportData.getUserData().getName().toLowerCase().trim().replaceAll(
+                "\\s+", "_") + "_" + time + ".xml";
 
         String reportFile = reportFilePath + reportFileName;
 
@@ -67,8 +67,8 @@ public class Saver {
         eleUserAddress.setTextContent(reportData.getUserData().getAddress());
 
         Element eleWaste = XMLHandler.createChild(eleReport, "Waste");
-        Element eleWasteType = XMLHandler.createChild(eleWaste, "WasteType");
-        Element eleWasteBrand = XMLHandler.createChild(eleWaste, "WasteBrand");
+        Element eleWasteType = XMLHandler.createChild(eleWaste, "Type");
+        Element eleWasteBrand = XMLHandler.createChild(eleWaste, "Brand");
         Element eleWasteWeight = XMLHandler.createChild(eleWaste, "Weight");
 
         eleWasteType.setTextContent(reportData.getWasteData().getWasteTypeData().getWastageType());

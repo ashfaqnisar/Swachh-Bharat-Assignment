@@ -88,6 +88,10 @@ public class XMLHandler {
 
     }
 
+    public static void write2File(Document document, String fileName) throws Exception {
+        write2File(document.getDocumentElement(), fileName);
+
+    }
 
     public static void write2File(Element element, String fileName) throws Exception {
         if (!isVoid(fileName)) {
