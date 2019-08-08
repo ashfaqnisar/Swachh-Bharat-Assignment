@@ -4,11 +4,10 @@ import com.rubicon.swachh.models.WasteTypeData;
 
 import java.util.Scanner;
 
-public class Wastage {
-    private Scanner scanner = new Scanner(System.in);
+class WasteType {
     private WasteTypeData wasteTypeData = new WasteTypeData();
 
-    WasteTypeData generateWastageForm() {
+    WasteType(){
         System.out.println("Type of the WasteData: ");
         System.out.println("Please select the type of wastage, which you will be depositing in " +
                 "the Kiosk");
@@ -16,6 +15,7 @@ public class Wastage {
         System.out.println("\t2. Plastic");
         System.out.println("\t3. Metal");
 
+        Scanner scanner = new Scanner(System.in);
         int switch_case = scanner.nextInt();
         switch (switch_case) {
             case 1:
@@ -34,6 +34,23 @@ public class Wastage {
                 System.out.println("Please select the correct option.\n");
                 break;
         }
+    }
+
+
+    String getTheTypeOfWaste(){
+        if (wasteTypeData.isGlass()){
+            return "Glass";
+        }
+        else if (wasteTypeData.isMetal()){
+            return "Metal";
+        }
+        else if (wasteTypeData.isPlastic()){
+            return "Plastic";
+        }
+        return "Unknown";
+    }
+
+    WasteTypeData getWasteTypeData() {
         return wasteTypeData;
     }
 }

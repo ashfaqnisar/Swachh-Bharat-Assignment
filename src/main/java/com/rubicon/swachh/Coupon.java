@@ -5,10 +5,10 @@ import com.rubicon.swachh.models.CouponData;
 import java.security.SecureRandom;
 import java.util.Random;
 
-public class Coupon {
+class Coupon {
     private CouponData couponData = new CouponData();
 
-    CouponData generateCouponCode() {
+    Coupon(){
         char[] chars = "abcdefghijklmnopqrstuvwxyz1234567890".toCharArray();
         StringBuilder sb = new StringBuilder();
         Random random = new SecureRandom();
@@ -17,6 +17,9 @@ public class Coupon {
             sb.append(c);
         }
         couponData.setCouponCode(sb.toString());
+    }
+
+    CouponData getCouponCode() {
         return couponData;
     }
 

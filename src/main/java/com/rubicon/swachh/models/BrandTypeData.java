@@ -87,8 +87,8 @@ public class BrandTypeData {
 
     @Override
     public String toString() {
-        return  "\nBrand of the Waste: "+ brandName+ "\n"+
-                "Brand Weight:       "+ brandCost + "gm\n";
+        return  "\nBrand of the Waste:  "+ brandName+
+                "\nWeight of the Waste: "+ brandCost + "gm\n";
 
     }
 }

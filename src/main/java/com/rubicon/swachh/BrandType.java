@@ -4,7 +4,7 @@ import com.rubicon.swachh.models.BrandTypeData;
 
 import java.util.Scanner;
 
-public class Brand {
+class BrandType {
 
     private Scanner scanner = new Scanner(System.in);
     private BrandTypeData brandTypeData = new BrandTypeData();

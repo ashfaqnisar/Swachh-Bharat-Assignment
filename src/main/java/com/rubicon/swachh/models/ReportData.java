@@ -9,9 +9,6 @@ public class ReportData {
     public ReportData() {
     }
 
-    public ReportData(UserData userData) {
-        this.userData = userData;
-    }
 
     public ReportData(UserData userData, WasteData wasteData, CouponData couponData) {
         this.userData = userData;

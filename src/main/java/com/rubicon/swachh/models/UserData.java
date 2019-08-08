@@ -48,7 +48,7 @@ public class UserData {
 
     @Override
     public String toString() {
-        return "\nUserData Information: " + "\n" +
+        return "\nUser Information: " + "\n" +
                 "Name:     " + getName() + "\n" +
                 "Email:    " + getEmail() + "\n" +
                 "Number:   " + getNumber() + "\n"+
