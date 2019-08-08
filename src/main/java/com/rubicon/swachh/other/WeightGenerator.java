@@ -1,4 +1,4 @@
-package com.rubicon.swachh.util;
+package com.rubicon.swachh.other;
 
 import java.util.Random;
 
