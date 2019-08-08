@@ -9,9 +9,9 @@ class WasteBrand {
     private Scanner scanner = new Scanner(System.in);
     private WasteBrandData wasteBrandData = new WasteBrandData();
 
-    WasteBrandData generateBrandTypeForm(String wastageType) {
-        if (!wastageType.equals("Default")) {
-            System.out.println("Please, provide the brand of the " + wastageType + " if known, " +
+    WasteBrand(String typeOfWaste){
+        if (!typeOfWaste.equals("Default")) {
+            System.out.println("Please, provide the brand of the " + typeOfWaste + " if known, " +
                     "else select" +
                     " the other option");
 
@@ -49,6 +49,13 @@ class WasteBrand {
                     break;
             }
         }
+    }
+
+    WasteBrandData getWasteBrandData() {
         return wasteBrandData;
+    }
+
+    public String getTypeOfBrand() {
+        return wasteBrandData.getTypeOfWasteBrand();
     }
 }

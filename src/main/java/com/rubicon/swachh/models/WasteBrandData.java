@@ -68,7 +68,7 @@ public class WasteBrandData {
         setBrandCost(15);
     }
 
-    public String getBrandName() {
+    public String getTypeOfWasteBrand() {
         return brandName;
     }
 

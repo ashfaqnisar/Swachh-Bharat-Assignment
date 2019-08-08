@@ -38,7 +38,7 @@ public class WasteTypeData {
         this.plastic = plastic;
     }
 
-    public String getWastageType() {
+    public String getTypeOfWaste() {
         if (isGlass()) {
             return "Glass";
         } else if (isMetal()) {
@@ -51,6 +51,6 @@ public class WasteTypeData {
 
     @Override
     public String toString() {
-        return "\nType of the Waste:   " + getWastageType();
+        return "\nType of the Waste:   " + getTypeOfWaste();
     }
 }

@@ -1,69 +1,73 @@
 <Coupon>
     <Plastic>
         <Pepsi>
-            <weight>30</weight>
-            <points>20</points>
+            <Weight>30</Weight>
+            <Points>20</Points>
         </Pepsi>
         <Sprite>
-            <weight>40</weight>
-            <points>30</points>
+            <Weight>40</Weight>
+            <Points>30</Points>
         </Sprite>
         <Thumbsup>
-            <weight>25</weight>
-            <points>10</points>
+            <Weight>25</Weight>
+            <Points>10</Points>
         </Thumbsup>
         <Coke>
-            <weight>35</weight>
-            <points>25</points>
+            <Weight>35</Weight>
+            <Points>25</Points>
         </Coke>
         <DietCoke>
-            <weight>20</weight>
-            <points>15</points>
+            <Weight>20</Weight>
+            <Points>15</Points>
         </DietCoke>
     </Plastic>
     <Glass>
         <Pepsi>
-            <weight>25</weight>
-            <points>20</points>
+            <Weight>25</Weight>
+            <Points>20</Points>
         </Pepsi>
         <Sprite>
-            <weight>38</weight>
-            <points>26</points>
+            <Weight>38</Weight>
+            <Points>26</Points>
         </Sprite>
         <Thumbsup>
-            <weight>42</weight>
-            <points>22</points>
+            <Weight>42</Weight>
+            <Points>22</Points>
         </Thumbsup>
         <Coke>
-            <weight>30</weight>
-            <points>15</points>
+            <Weight>30</Weight>
+            <Points>15</Points>
         </Coke>
         <DietCoke>
-            <weight>45</weight>
-            <points>20</points>
+            <Weight>45</Weight>
+            <Points>20</Points>
         </DietCoke>
     </Glass>
     <Metal>
         <Pepsi>
-            <weight>26</weight>
-            <points>18</points>
+            <Weight>26</Weight>
+            <Points>18</Points>
         </Pepsi>
         <Sprite>
-            <weight>35</weight>
-            <points>15</points>
+            <Weight>35</Weight>
+            <Points>15</Points>
         </Sprite>
         <Thumbsup>
-            <weight>35</weight>
-            <points>25</points>
+            <Weight>35</Weight>
+            <Points>25</Points>
         </Thumbsup>
         <Coke>
-            <weight>55</weight>
-            <points>30</points>
+            <Weight>55</Weight>
+            <Points>30</Points>
         </Coke>
         <DietCoke>
-            <weight>60</weight>
-            <points>35</points>
+            <Weight>60</Weight>
+            <Points>35</Points>
         </DietCoke>
     </Metal>
+    <Other>
+        <Weight>40</Weight>
+        <Points>20</Points>
+    </Other>
 
 </Coupon>
