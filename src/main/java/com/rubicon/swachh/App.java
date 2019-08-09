@@ -17,9 +17,10 @@ public class App {
 
         Coupon coupon = new Coupon(waste.getTypeofWaste(),waste.getTypeofWasteBrand());
 
-        ReportData reportData = new ReportData(register.getUserData(), waste.getWastageData(), coupon.getCouponData());
+        ReportData reportData = new ReportData(register.getUserData(), waste.getArrayWasteData(),
+                coupon.getCouponData());
 
-        System.out.println(reportData.toString());
+        reportData.printTheReport();
 
         Saver saver = new Saver();
         saver.storeTheReport(reportData);

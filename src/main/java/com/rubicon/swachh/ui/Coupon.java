@@ -8,12 +8,12 @@ import java.util.Random;
 
 public class Coupon {
     private CouponData couponData = new CouponData();
-    private Reader reader = new Reader();
 
     public Coupon(String typeOfWaste, String typeOfWasteBrand) throws Exception {
         String code = generateCouponCode();
         couponData.setCouponCode(code);
 
+        Reader reader = new Reader();
         int points = reader.getPointsFromFile(typeOfWaste.trim().replaceAll(" ",""),
                 typeOfWasteBrand.trim().replaceAll(" ",""));
         couponData.setCouponPoints(points);

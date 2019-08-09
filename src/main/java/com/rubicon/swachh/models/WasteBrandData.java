@@ -54,7 +54,7 @@ public class WasteBrandData {
 
     public void setThumbsUpBrand(boolean thumbsUpBrand) {
         ThumbsUpBrand = thumbsUpBrand;
-        setBrandName("Thumbs Up");
+        setBrandName("Thumbsup");
         setBrandCost(15);
     }
 

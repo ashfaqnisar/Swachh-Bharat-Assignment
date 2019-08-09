@@ -2,13 +2,14 @@ package com.rubicon.swachh.ui;
 
 import com.rubicon.swachh.models.WasteData;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Waste {
     private WasteData wasteData;
+    private ArrayList<WasteData> arrayWaste = new ArrayList<>();
 
     public Waste() throws Exception {
-
         boolean loop = true;
         Scanner scanner = new Scanner(System.in);
         for (int i = 0; loop; i++) {
@@ -20,8 +21,9 @@ public class Waste {
 
             wasteData.setWasteType(wasteType.getWasteTypeData());
             wasteData.setWasteBrandData(brandType.getWasteBrandData());
-
             wasteData.setWeight(wasteWeight.getWeight());
+
+            arrayWaste.add(wasteData);
 
             System.out.print("\nDo you want to add more waste\n");
             System.out.print("Press Y or N");
@@ -36,6 +38,10 @@ public class Waste {
         }
     }
 
+    public ArrayList<WasteData> getArrayWasteData(){
+        return arrayWaste;
+    }
+
     public String getTypeofWaste(){
         return wasteData.getWasteTypeData().getTypeOfWaste();
     }
@@ -43,7 +49,7 @@ public class Waste {
         return wasteData.getWasteBrandData().getTypeOfWasteBrand();
     }
 
-    public WasteData getWastageData() {
+    public WasteData getWasteData() {
         return wasteData;
     }
 }

@@ -1,16 +1,13 @@
 package com.rubicon.swachh.models;
 
+import java.util.ArrayList;
 
 public class ReportData {
     private UserData userData;
-    private WasteData wasteData;
+    private ArrayList<WasteData> wasteData;
     private CouponData couponData;
 
-    public ReportData() {
-    }
-
-
-    public ReportData(UserData userData, WasteData wasteData, CouponData couponData) {
+    public ReportData(UserData userData, ArrayList<WasteData> wasteData, CouponData couponData) {
         this.userData = userData;
         this.wasteData = wasteData;
         this.couponData = couponData;
@@ -24,11 +21,11 @@ public class ReportData {
         this.userData = userData;
     }
 
-    public WasteData getWasteData() {
+    public ArrayList<WasteData> getArrayWasteData() {
         return wasteData;
     }
 
-    public void setWasteData(WasteData wasteData) {
+    public void setWasteData(ArrayList<WasteData> wasteData) {
         this.wasteData = wasteData;
     }
 
@@ -40,8 +37,12 @@ public class ReportData {
         this.couponData = couponData;
     }
 
-    @Override
-    public String toString() {
-        return userData.toString() + wasteData.toString() + couponData.toString();
+
+    public void printTheReport(){
+        System.out.print(userData.toString());
+        for (WasteData data:wasteData){
+            System.out.println( data.getWasteTypeData().toString()+data.getWasteBrandData().toString());
+        }
+        System.out.print(couponData.toString());
     }
 }

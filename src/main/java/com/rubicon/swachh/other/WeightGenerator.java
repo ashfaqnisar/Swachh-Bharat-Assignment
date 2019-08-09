@@ -7,8 +7,9 @@ public class WeightGenerator {
 
 
     public int generateRandom(int min, int max) {
-        return random.nextInt((max - min) + 1) + min;
+        return random.nextInt((max - min) + 1) + min/2;
     }
+
 
 
 }
