@@ -6,16 +6,16 @@ import org.w3c.dom.Element;
 
 public class Reader {
     private Document docWeightCoupon;
-    private Element eleCoupon;
+    private Element eleWasteWeight;
 
     public Reader() throws Exception {
-        String couponFile = "src/main/data/Coupon.xml";
-        docWeightCoupon = XMLHandler.createFromFileOrUrl(couponFile);
-        eleCoupon = docWeightCoupon.getDocumentElement();
+        String wasteWeightFile = "src/main/data/WasteWeight.xml";
+        docWeightCoupon = XMLHandler.createFromFileOrUrl(wasteWeightFile);
+        eleWasteWeight = docWeightCoupon.getDocumentElement();
     }
 
     public int getWeightFromFile(String typeOfWaste, String typeOfWasteBrand){
-        Element eleWasteType = XMLHandler.getChildElement(eleCoupon,typeOfWaste);
+        Element eleWasteType = XMLHandler.getChildElement(eleWasteWeight,typeOfWaste);
         Element eleWasteBrand = XMLHandler.getChildElement(eleWasteType,typeOfWasteBrand);
 
         Element eleWeight = XMLHandler.getChildElement(eleWasteBrand,"Weight");
@@ -24,12 +24,12 @@ public class Reader {
     }
 
     public int getPointsFromFile(String typeOfWaste, String typeOfWasteBrand){
-        Element eleWasteType = XMLHandler.getChildElement(eleCoupon,typeOfWaste);
+        Element eleWasteType = XMLHandler.getChildElement(eleWasteWeight,typeOfWaste);
         Element eleWasteBrand = XMLHandler.getChildElement(eleWasteType,typeOfWasteBrand);
 
-        Element eleCouponPoints = XMLHandler.getChildElement(eleWasteBrand,"Points");
+//        Element eleCouponPoints = XMLHandler.getChildElement(eleWasteBrand,"Points");
 
-        return Integer.parseInt(eleCouponPoints.getTextContent());
+        return 40;
     }
 
 

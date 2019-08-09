@@ -2,6 +2,7 @@ package com.rubicon.swachh.other;
 
 import com.rubicon.swachh.models.ReportData;
 import com.rubicon.swachh.models.UserData;
+import com.rubicon.swachh.models.WasteData;
 import com.rubicon.swachh.util.XMLHandler;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -66,14 +67,24 @@ public class Saver {
         eleUserNumber.setTextContent(String.valueOf(reportData.getUserData().getNumber()));
         eleUserAddress.setTextContent(reportData.getUserData().getAddress());
 
-        Element eleWaste = XMLHandler.createChild(eleReport, "Waste");
-        Element eleWasteType = XMLHandler.createChild(eleWaste, "Type");
-        Element eleWasteBrand = XMLHandler.createChild(eleWaste, "Brand");
-        Element eleWasteWeight = XMLHandler.createChild(eleWaste, "Weight");
+        Element eleWasteData = XMLHandler.createChild(eleReport,"WasteData");
 
-        eleWasteType.setTextContent(reportData.getWasteData().getWasteTypeData().getTypeOfWaste());
-        eleWasteBrand.setTextContent(reportData.getWasteData().getWasteBrandData().getTypeOfWasteBrand());
-        eleWasteWeight.setTextContent(String.valueOf(reportData.getWasteData().getWeight()));
+
+        for (WasteData data:reportData.getArrayWasteData()){
+            Element eleWaste = XMLHandler.createChild(eleWasteData, "Waste");
+            Element eleWasteType = XMLHandler.createChild(eleWaste, "Type");
+            Element eleWasteBrand = XMLHandler.createChild(eleWaste, "Brand");
+            Element eleWasteWeight = XMLHandler.createChild(eleWaste, "Weight");
+
+            eleWasteType.setTextContent(data.getWasteTypeData().getTypeOfWaste());
+
+            eleWasteBrand.setTextContent(data.getWasteBrandData().getTypeOfWasteBrand());
+            eleWasteWeight.setTextContent(String.valueOf(data.getWeight()));
+        }
+
+//        eleWasteType.setTextContent(reportData.getWasteTypeData().getTypeOfWaste());
+//        eleWasteBrand.setTextContent(reportData.getWasteData().getWasteBrandData().getTypeOfWasteBrand());
+//        eleWasteWeight.setTextContent(String.valueOf(reportData.getWasteData().getWeight()));
 
         Element eleCoupon = XMLHandler.createChild(eleReport, "Coupon");
         Element eleCouponCode = XMLHandler.createChild(eleCoupon, "CouponCode");
