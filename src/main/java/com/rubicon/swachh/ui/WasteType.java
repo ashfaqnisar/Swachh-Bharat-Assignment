@@ -1,11 +1,13 @@
 package com.rubicon.swachh.ui;
 
 import com.rubicon.swachh.models.WasteTypeData;
+import com.rubicon.swachh.other.Validator;
 
 import java.util.Scanner;
 
 class WasteType {
     private WasteTypeData wasteTypeData = new WasteTypeData();
+    private Validator validator = new Validator();
 
     WasteType() {
         System.out.println("\nPlease select the type of wastage, which you will be depositing in " +
@@ -15,7 +17,7 @@ class WasteType {
         System.out.println("\t3. Metal");
 
         Scanner scanner = new Scanner(System.in);
-        int switch_case = scanner.nextInt();
+        int switch_case = validator.validateTypeInput(scanner.next());
         switch (switch_case) {
             case 1:
                 System.out.println("Glass has been selected.\n");

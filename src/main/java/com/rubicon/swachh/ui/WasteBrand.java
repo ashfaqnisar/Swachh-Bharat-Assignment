@@ -1,6 +1,7 @@
 package com.rubicon.swachh.ui;
 
 import com.rubicon.swachh.models.WasteBrandData;
+import com.rubicon.swachh.other.Validator;
 
 import java.util.Scanner;
 
@@ -8,6 +9,7 @@ class WasteBrand {
 
     private Scanner scanner = new Scanner(System.in);
     private WasteBrandData wasteBrandData = new WasteBrandData();
+    private Validator validator =new Validator();
 
     WasteBrand(String typeOfWaste){
         if (!typeOfWaste.equals("Default")) {
@@ -21,7 +23,7 @@ class WasteBrand {
             System.out.println("\t4. Thumbs Up");
             System.out.println("\t5. Other");
 
-            int switch_case = scanner.nextInt();
+            int switch_case = validator.validateBrandInput(scanner.next());
 
             switch (switch_case) {
                 case 1:
@@ -52,6 +54,8 @@ class WasteBrand {
             wasteBrandData.setOtherBrand(true);
         }
     }
+
+
 
     WasteBrandData getWasteBrandData() {
         return wasteBrandData;

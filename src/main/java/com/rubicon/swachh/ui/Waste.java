@@ -1,6 +1,7 @@
 package com.rubicon.swachh.ui;
 
 import com.rubicon.swachh.models.WasteData;
+import com.rubicon.swachh.other.Validator;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -8,6 +9,7 @@ import java.util.Scanner;
 public class Waste {
     private WasteData wasteData;
     private ArrayList<WasteData> arrayWaste = new ArrayList<>();
+    private Validator validator = new Validator();
 
     public Waste() throws Exception {
         boolean loop = true;
@@ -28,13 +30,7 @@ public class Waste {
             System.out.print("\nDo you want to add more waste\n");
             System.out.print("Press Y or N");
             String input = String.valueOf(scanner.next().charAt(0));
-            while (!(input.equals("Y") || input.equals("N") || input.equals("y") || input.equals("n"))){
-                System.out.println("Enter the valid input!");
-                input = String.valueOf(scanner.next().charAt(0));
-            }
-            if (input.equals("N")||input.equals("n")){
-                loop =false;
-            }
+            loop = validator.validateChoice(input);
         }
     }
 
