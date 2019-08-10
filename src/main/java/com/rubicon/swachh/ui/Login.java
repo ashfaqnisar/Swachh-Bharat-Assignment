@@ -9,7 +9,7 @@ public class Login {
 
     private UserData userData = new UserData();
 
-    private Login() {
+    Login() {
         System.out.print("Login \n");
 
         System.out.print("Hello there, can you provide your email id: ");

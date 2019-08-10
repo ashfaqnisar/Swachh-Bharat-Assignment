@@ -10,7 +10,8 @@ public class Validator {
     private Scanner scanner = new Scanner(System.in);
 
     public String checkName(String name) {
-        if (name.matches(NAME_REXP)) {
+
+        if (name.replaceAll(" ","").matches(NAME_REXP)) {
             return name;
         } else {
             System.out.println("The First Character should not be a number.");
@@ -43,7 +44,7 @@ public class Validator {
     }
 
     public String checkAddress(String address) {
-        if (address.matches(ADDRESS_REXP)) {
+        if (address.replaceAll(" ","").matches(ADDRESS_REXP)) {
             return address;
         } else {
             System.out.println("\nPlease, Enter a valid address:");
@@ -79,7 +80,7 @@ public class Validator {
         if (choice.matches(CHOICE_REXP)){
             return choice.equals("y")||choice.equals("Y");
         }else {
-            System.out.println("\nPlease, Enter either Y or N");
+            System.out.println("\nPlease, Enter either Y or N:");
             validateChoice(String.valueOf(scanner.next().trim().charAt(0)));
         }
         return true;

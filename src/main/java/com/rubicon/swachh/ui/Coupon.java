@@ -1,7 +1,6 @@
 package com.rubicon.swachh.ui;
 
 import com.rubicon.swachh.models.CouponData;
-import com.rubicon.swachh.other.Reader;
 
 import java.security.SecureRandom;
 import java.util.Random;
