@@ -56,7 +56,7 @@ public class Validator {
     }
 
     public int validateTypeInput(String typeSelected) {
-        if (typeSelected.matches(BRAND_REXP)) {
+        if (typeSelected.matches(TYPE_REXP)) {
             return Integer.parseInt(typeSelected);
         } else {
             System.out.println("\nPlease, Enter valid input for type:");
@@ -73,5 +73,15 @@ public class Validator {
 
             return validateBrandInput(scanner.next());
         }
+    }
+
+    public boolean validateChoice(String choice){
+        if (choice.matches(CHOICE_REXP)){
+            return choice.equals("y")||choice.equals("Y");
+        }else {
+            System.out.println("\nPlease, Enter either Y or N");
+            validateChoice(String.valueOf(scanner.next().charAt(0)));
+        }
+        return true;
     }
 }

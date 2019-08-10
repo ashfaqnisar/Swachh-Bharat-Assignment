@@ -9,5 +9,5 @@ public class RegularExpConstants {
     public static final String BRAND_REXP="^[1-5$;]{1}$";
     public static final String TYPE_REXP="^[1-3$;]{1}$";
 
-
+    public static final String CHOICE_REXP="^[y,Y,n,N$;]{1,3}$";
 }
