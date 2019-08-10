@@ -15,6 +15,9 @@
         <DietCoke>
             <Weight>20</Weight>
         </DietCoke>
+        <Other>
+            <Weight>40</Weight>
+        </Other>
     </Plastic>
     <Glass>
         <Pepsi>
@@ -32,6 +35,9 @@
         <DietCoke>
             <Weight>45</Weight>
         </DietCoke>
+        <Other>
+            <Weight>40</Weight>
+        </Other>
     </Glass>
     <Metal>
         <Pepsi>
@@ -49,6 +55,9 @@
         <DietCoke>
             <Weight>60</Weight>
         </DietCoke>
+        <Other>
+            <Weight>40</Weight>
+        </Other>
     </Metal>
     <Other>
         <Weight>40</Weight>
