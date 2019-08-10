@@ -97,7 +97,28 @@ public class Saver {
         eleCouponCode.setTextContent(reportData.getCouponData().getCouponCode());
         eleCouponPoints.setTextContent(String.valueOf(reportData.getTotalCouponPoints()));
 
+        storeTheCoupon(reportData);
         XMLHandler.write2File(eleReport, reportFile);
+
+    }
+    private void storeTheCoupon(ReportData reportData) throws Exception {
+        String couponFilePath = "src/main/data/";
+        /*String userFileName = userData.getName().toLowerCase().trim().replaceAll("\\s+", "_") +
+                ".xml";*/
+        String couponFile = couponFilePath + "Coupon.xml";
+        Document docCoupons = XMLHandler.createFromFileOrUrl(couponFile);
+        Element eleCoupon = docCoupons.getDocumentElement();
+
+        Element eleCouponData = XMLHandler.createChild(eleCoupon,"CouponData");
+        Element eleCouponCode = XMLHandler.createChild(eleCouponData,"Code");
+        Element eleCouponEmail = XMLHandler.createChild(eleCouponData,"Email");
+        Element eleCouponUsed = XMLHandler.createChild(eleCouponData,"CouponUsed");
+
+        eleCouponCode.setTextContent(reportData.getCouponData().getCouponCode());
+        eleCouponEmail.setTextContent(reportData.getUserData().getEmail());
+        eleCouponUsed.setTextContent(String.valueOf(false));
+
+        XMLHandler.write2File(docCoupons,couponFile);
 
     }
 }
