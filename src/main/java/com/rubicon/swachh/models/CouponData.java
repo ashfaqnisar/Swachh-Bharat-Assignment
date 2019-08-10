@@ -3,7 +3,6 @@ package com.rubicon.swachh.models;
 public class CouponData {
     private String couponCode;
     private int couponPoints;
-
     public CouponData() {
     }
 
@@ -19,17 +18,19 @@ public class CouponData {
         this.couponCode = couponCode;
     }
 
-    public int getCouponPoints() {
-        return couponPoints;
-    }
 
     public void setCouponPoints(int couponPoints) {
         this.couponPoints = couponPoints;
     }
 
+    public int getCouponPoints(){
+        return couponPoints;
+    }
+
+
     @Override
     public String toString() {
         return "\nCoupon Code:   " + getCouponCode()+"\n"+
-                "\nCoupon Points: "+ getCouponPoints()+" points";
+                "\nCoupon Points: "+ couponPoints+" points";
     }
 }

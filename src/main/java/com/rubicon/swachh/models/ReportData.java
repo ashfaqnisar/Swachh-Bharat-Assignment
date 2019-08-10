@@ -6,11 +6,14 @@ public class ReportData {
     private UserData userData;
     private ArrayList<WasteData> wasteData;
     private CouponData couponData;
+    private int totalWeight;
+    private int totalCouponPoints;
 
     public ReportData(UserData userData, ArrayList<WasteData> wasteData, CouponData couponData) {
         this.userData = userData;
         this.wasteData = wasteData;
         this.couponData = couponData;
+        setTotalWeightAndCouponPoints();
     }
 
     public UserData getUserData() {
@@ -37,12 +40,28 @@ public class ReportData {
         this.couponData = couponData;
     }
 
+    private void setTotalWeightAndCouponPoints() {
+        for (WasteData data:wasteData){
+            totalWeight+=(data.getWeight());
+            totalCouponPoints+=(couponData.getCouponPoints());
+        }
+    }
+
+
+    public int getTotalCouponPoints() {
+        return totalCouponPoints ;
+    }
+
+    public int getTotalWeight() {
+        return totalWeight;
+    }
 
     public void printTheReport(){
         System.out.print(userData.toString());
         for (WasteData data:wasteData){
-            System.out.println( data.getWasteTypeData().toString()+data.getWasteBrandData().toString());
+            System.out.println( data.getWasteTypeData().toString()+data.getWasteBrandData().toString()+data.getWeight());
         }
         System.out.print(couponData.toString());
+        System.out.println("\n"+totalWeight+" "+totalCouponPoints);
     }
 }

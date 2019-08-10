@@ -1,8 +1,6 @@
 package com.rubicon.swachh.models;
 
-import com.rubicon.swachh.ui.Waste;
 
-import java.util.ArrayList;
 
 public class WasteData {
     private WasteTypeData wasteTypeData;
@@ -21,7 +19,7 @@ public class WasteData {
         return wasteTypeData;
     }
 
-    public void setWasteType(WasteTypeData wasteTypeData) {
+    public void setWasteTypeData(WasteTypeData wasteTypeData) {
         this.wasteTypeData = wasteTypeData;
     }
 
@@ -40,11 +38,7 @@ public class WasteData {
     public void setWeight(int weight) {
         Weight = weight;
     }
-    public void printWasteData(ArrayList<WasteData> wasteData){
-        for (WasteData data:wasteData){
-            System.out.println(data.getWasteTypeData().toString()+data.getWasteBrandData().toString());
-        }
-    }
+
 
     @Override
     public String toString() {
