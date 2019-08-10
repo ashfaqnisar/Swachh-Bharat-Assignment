@@ -15,7 +15,7 @@ public class App {
 
         Waste waste = new Waste();
 
-        Coupon coupon = new Coupon(waste);
+        Coupon coupon = new Coupon();
 
         ReportData reportData = new ReportData(register.getUserData(), waste.getArrayWasteData(),
                 coupon.getCouponData());

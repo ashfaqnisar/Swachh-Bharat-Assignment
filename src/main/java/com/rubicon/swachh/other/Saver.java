@@ -75,12 +75,16 @@ public class Saver {
             Element eleWasteType = XMLHandler.createChild(eleWaste, "Type");
             Element eleWasteBrand = XMLHandler.createChild(eleWaste, "Brand");
             Element eleWasteWeight = XMLHandler.createChild(eleWaste, "Weight");
+            Element elePoints = XMLHandler.createChild(eleWaste,"Points");
 
             eleWasteType.setTextContent(data.getWasteTypeData().getTypeOfWaste());
 
             eleWasteBrand.setTextContent(data.getWasteBrandData().getTypeOfWasteBrand());
             eleWasteWeight.setTextContent(String.valueOf(data.getWeight()));
+            elePoints.setTextContent(String.valueOf(data.getPoints()));
         }
+        Element eleTotalWeight = XMLHandler.createChild(eleWasteData,"TotalWeight");
+        eleTotalWeight.setTextContent(String.valueOf(reportData.getTotalWeight()));
 
 //        eleWasteType.setTextContent(reportData.getWasteTypeData().getTypeOfWaste());
 //        eleWasteBrand.setTextContent(reportData.getWasteData().getWasteBrandData().getTypeOfWasteBrand());
@@ -91,7 +95,7 @@ public class Saver {
         Element eleCouponPoints = XMLHandler.createChild(eleCoupon, "CouponPoints");
 
         eleCouponCode.setTextContent(reportData.getCouponData().getCouponCode());
-        eleCouponPoints.setTextContent(String.valueOf(reportData.getCouponData().getCouponPoints()));
+        eleCouponPoints.setTextContent(String.valueOf(reportData.getTotalCouponPoints()));
 
         XMLHandler.write2File(eleReport, reportFile);
 

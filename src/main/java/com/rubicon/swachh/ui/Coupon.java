@@ -9,11 +9,9 @@ import java.util.Random;
 public class Coupon {
     private CouponData couponData = new CouponData();
 
-    public Coupon(Waste waste) throws Exception {
+    public Coupon() throws Exception {
         String code = generateCouponCode();
         couponData.setCouponCode(code);
-        couponData.setCouponPoints(waste.getWasteData().getWeight());
-
     }
 
     private String generateCouponCode() {

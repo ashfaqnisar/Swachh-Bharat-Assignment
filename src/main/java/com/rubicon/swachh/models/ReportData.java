@@ -43,7 +43,7 @@ public class ReportData {
     private void setTotalWeightAndCouponPoints() {
         for (WasteData data:wasteData){
             totalWeight+=(data.getWeight());
-            totalCouponPoints+=(couponData.getCouponPoints());
+            totalCouponPoints+=(data.getPoints());
         }
     }
 
@@ -59,9 +59,11 @@ public class ReportData {
     public void printTheReport(){
         System.out.print(userData.toString());
         for (WasteData data:wasteData){
-            System.out.println( data.getWasteTypeData().toString()+data.getWasteBrandData().toString()+data.getWeight());
+            System.out.println( data.getWasteTypeData().toString()+data.getWasteBrandData().toString()+
+                    "\n"+"Weight: "+ data.getWeight()+"\tPoints: "+ data.getPoints());
         }
-        System.out.print(couponData.toString());
-        System.out.println("\n"+totalWeight+" "+totalCouponPoints);
+        System.out.print("\nCoupon Code: "+couponData.getCouponCode());
+        System.out.println("\nTotal Weight: "+totalWeight+"\n"+
+                "Total CouponPoints: "+totalCouponPoints);
     }
 }

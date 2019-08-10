@@ -9,12 +9,11 @@ import java.util.Scanner;
 public class Waste {
     private WasteData wasteData;
     private ArrayList<WasteData> arrayWaste = new ArrayList<>();
-    private Validator validator = new Validator();
 
     public Waste() throws Exception {
         boolean loop = true;
         Scanner scanner = new Scanner(System.in);
-        for (int i = 0; loop; i++) {
+        while(loop) {
             wasteData = new WasteData();
 
             WasteType wasteType = new WasteType();
@@ -24,12 +23,14 @@ public class Waste {
             wasteData.setWasteTypeData(wasteType.getWasteTypeData());
             wasteData.setWasteBrandData(brandType.getWasteBrandData());
             wasteData.setWeight(wasteWeight.getWeight());
+            wasteData.setPoints(wasteData.getWeight());
 
             arrayWaste.add(wasteData);
 
             System.out.print("\nDo you want to add more waste\n");
             System.out.print("Press Y or N");
             String input = String.valueOf(scanner.next().charAt(0));
+            Validator validator = new Validator();
             loop = validator.validateChoice(input);
         }
     }

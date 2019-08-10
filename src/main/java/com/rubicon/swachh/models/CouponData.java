@@ -19,18 +19,20 @@ public class CouponData {
     }
 
 
-    public void setCouponPoints(int couponPoints) {
+    public void setCouponPoints(int couponPoints){
         this.couponPoints = couponPoints;
     }
 
-    public int getCouponPoints(){
+
+
+    public int getCouponPoints() {
         return couponPoints;
     }
 
-
     @Override
     public String toString() {
-        return "\nCoupon Code:   " + getCouponCode()+"\n"+
-                "\nCoupon Points: "+ couponPoints+" points";
+        return "\nCoupon Code:   " + getCouponCode()+"\n";
     }
+
+
 }

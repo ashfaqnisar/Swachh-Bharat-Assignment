@@ -6,6 +6,7 @@ public class WasteData {
     private WasteTypeData wasteTypeData;
     private WasteBrandData wasteBrandData;
     private int Weight;
+    private int Points;
 
     public WasteData() {
     }
@@ -29,6 +30,14 @@ public class WasteData {
 
     public void setWasteBrandData(WasteBrandData wasteBrandData) {
         this.wasteBrandData = wasteBrandData;
+    }
+
+    public int getPoints() {
+        return Points;
+    }
+
+    public void setPoints(int Weight) {
+        Points = (Weight/2)+7;
     }
 
     public int getWeight() {
