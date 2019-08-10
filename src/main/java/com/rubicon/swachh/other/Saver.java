@@ -110,8 +110,8 @@ public class Saver {
         Element eleCoupon = docCoupons.getDocumentElement();
 
         Element eleCouponData = XMLHandler.createChild(eleCoupon,"CouponData");
-        Element eleCouponCode = XMLHandler.createChild(eleCoupon,"Code");
-        Element eleCouponPoints = XMLHandler.createChild(eleCoupon,"Points");
+        Element eleCouponCode = XMLHandler.createChild(eleCouponData,"Code");
+        Element eleCouponPoints = XMLHandler.createChild(eleCouponData,"Points");
         Element eleCouponEmail = XMLHandler.createChild(eleCouponData,"Email");
         Element eleCouponUsed = XMLHandler.createChild(eleCouponData,"CouponUsed");
 
