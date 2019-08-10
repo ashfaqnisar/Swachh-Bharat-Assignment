@@ -31,12 +31,12 @@ three objects and they are
 
 The below diagram is the data flow of the program and how the data flows in the project.
 
-**UI Package:**
+### UI Package:
 The **UI package** contains all the files, which are used to **display in the front end**.
-Below is the Flow Diagram for the UI Package.
-[Image](src/main/diagrams/UI.png)
+Below is the UML Diagram for the UI Package in the project.
+![](src/main/diagrams/UI.png)
 
-**Other Package**
+### Other Package:
 The other package contains the following files, these files are **not directly used** in the front 
 end **but supports the UI files.**
 - **Saver**: The saver file is used for **storing reports**, users and any other data, which is to
@@ -47,10 +47,11 @@ end **but supports the UI files.**
 - **Validator**: The validator file is used to **validate all the inputs** in the project.
 
 - **OutputGenerator:** The outputGenerator is responsible for the **printing of the report data**.
-The below is the diagram for the Other Package
-[CouponsImage](src/main/diagrams/Other.png)
 
-**Util Package**:
+The below is the diagram for the Other Package
+![](src/main/diagrams/Other.png)
+
+### Util Package:
 The util package contains two files and they are:
 - **RegularExpClass**
 - **XMLHandler**: For handling all the XML functions and for **easy write, read**;
@@ -60,7 +61,7 @@ The below diagram repesents the **data flow of the project**. With help of this,
 the user **understand more about the flow of the project**"
 
 The Model Package contains the following files
-[image2](src/main/diagrams/POJO.png);
+![](src/main/diagrams/POJO.png);
 
 ## Assumptions
 1. First assumption is regarding the execution of the project, the user will be running the 
