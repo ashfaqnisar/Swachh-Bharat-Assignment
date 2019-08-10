@@ -1,8 +1,6 @@
 package com.rubicon.swachh;
 
-import com.rubicon.swachh.models.ReportData;
-import com.rubicon.swachh.other.OutputGenerator;
-import com.rubicon.swachh.other.Saver;
+
 import com.rubicon.swachh.ui.Coupon;
 import com.rubicon.swachh.ui.Register;
 import com.rubicon.swachh.ui.Report;
@@ -12,6 +10,7 @@ import com.rubicon.swachh.ui.Waste;
 public class App {
 
     public static void main(String[] args) throws Exception {
+
 
         Register register = new Register();
 
@@ -24,6 +23,8 @@ public class App {
 
         report.printReport();
         report.saveReport();
+
+
 
 
 //

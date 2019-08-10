@@ -5,7 +5,7 @@ import com.rubicon.swachh.models.ReportData;
 import java.util.*;
 
 public class OutputGenerator {
-    private int PADDING_SIZE = 2;
+    private int PADDING_SIZE = 4;
     private String NEW_LINE = "\n";
     private String TABLE_JOINT_SYMBOL = "+";
     private String TABLE_V_SPLIT_SYMBOL = "|";
@@ -14,35 +14,50 @@ public class OutputGenerator {
 
     }
     public void createHeader(String headerName){
-        System.out.println("___________________________________________________________________________________________");//90
-        System.out.format("%1s %90s","|","|");
+        System.out.println(
+                "_____________________________________________________________________________________________");//90
+        System.out.format("%1s %92s","|","|");
         System.out.print("\n");
-        System.out.format("%1s %54s %35s","|",headerName,"|");
+        System.out.format("%1s %54s %37s","|",headerName,"|");
         System.out.print("\n");
-        System.out.format("%1s %90s","|","|");
-        System.out.print("\n|------------------------------------------------------------------------------------------|\n");
+        System.out.format("%1s %92s","|","|");
+        System.out.print("\n" +
+                "|--------------------------------------------------------------------------------------------|\n");
     }
 
     public void createFooter(){
-        System.out.print("\n");
-        System.out.format("%1s %90s","|","|");
-        System.out.print("\n|__________________________________________________________________________________________|\n");
+        System.out.format("%1s %92s","|","|");
+        System.out.print("\n" +
+                "|____________________________________________________________________________________________|\n");
     }
 
-    public void printTheReport() {
-        System.out.format("%1s %1s %75s","|","Date: 10/14/19","|");
-        System.out.print("\n");
-        System.out.format("%1s","| Recycled By: ");
-        System.out.format(" %1s %69s","Ashfaq Nisar","|");
-
-
+    private void printTheSpaceFormat(String string) {
+        System.out.print(string);
+        int length= string.length();
+        for (int i=0;i<93-length;i++)
+            System.out.print(" ");
+        System.out.println("|");
     }
 
     public void printTheReport(ReportData reportData) {
-        System.out.format("%1s %1s %75s","|","Date: 10/14/19","|");
-        System.out.print("\n");
-        System.out.format("%1s","| Recycled By: ");
-        System.out.format(" %1s %69s","Ashfaq Nisar","|");
+        String userName = "| Recycled By:"+reportData.getUserData().getName();
+        String userEmail = "| User Email: "+reportData.getUserData().getEmail();
+        String userPhone = "| User Phone: "+reportData.getUserData().getNumber();
+        String totalItems = "| Total Waste Items: "+reportData.getArrayWasteData().size();
+        String detailedInformation = "| Detailed Information About Waste: ";
+        String totalWeightAndPoints = "| Total Weight: "+reportData.getTotalWeight()+ "     Total" +
+                " Coupon Points: "+ reportData.getTotalCouponPoints();
+        String couponCode = "| The coupon code is: "+reportData.getCouponData().getCouponCode();
+
+        String thankYouNote = "| Thank you, for contributing towards a Swachh Bharat";
+
+
+        printTheSpaceFormat(userName);
+        printTheSpaceFormat(userEmail);
+        printTheSpaceFormat(userPhone);
+        printTheSpaceFormat(totalItems);
+        printTheSpaceFormat(detailedInformation);
+
         List<String> headersList = new ArrayList<>();
         headersList.add("S.No");
         headersList.add("Type of Wastage");
@@ -52,19 +67,34 @@ public class OutputGenerator {
 
         List<List<String>> rowsList = new ArrayList<>();
 
-        for (int i = 0; i <reportData.getArrayWasteData().size(); i++) {
-            List<String> row = new ArrayList<>();
-            row.add(String.valueOf(i));
-            row.add(reportData.getArrayWasteData().get(i).getWasteTypeData().getTypeOfWaste());
-            row.add(reportData.getArrayWasteData().get(i).getWasteBrandData().getTypeOfWasteBrand());
-            row.add(String.valueOf(reportData.getArrayWasteData().get(i).getWeight()));
-            row.add(String.valueOf(reportData.getArrayWasteData().get(i).getPoints()));
+        if (reportData.getArrayWasteData().size()>1){
+            for (int i = 0; i < reportData.getArrayWasteData().size(); i++) {
+                List<String> row = new ArrayList<>();
+                row.add(String.valueOf(Integer.parseInt(String.valueOf(i))+1));
+                row.add(reportData.getArrayWasteData().get(i).getWasteTypeData().getTypeOfWaste());
+                row.add(reportData.getArrayWasteData().get(i).getWasteBrandData().getTypeOfWasteBrand());
+                row.add(String.valueOf(reportData.getArrayWasteData().get(i).getWeight()));
+                row.add(String.valueOf(reportData.getArrayWasteData().get(i).getPoints()));
+                rowsList.add(row);
+            }
 
+        }
+        if (reportData.getArrayWasteData().size()==1){
+
+            List<String> row = new ArrayList<>();
+            row.add(String.valueOf(1));
+            row.add(reportData.getArrayWasteData().get(0).getWasteTypeData().getTypeOfWaste());
+            row.add(reportData.getArrayWasteData().get(0).getWasteBrandData().getTypeOfWasteBrand());
+            row.add(String.valueOf(reportData.getArrayWasteData().get(0).getWeight()));
+            row.add(String.valueOf(reportData.getArrayWasteData().get(0).getPoints()));
             rowsList.add(row);
         }
 
 
         System.out.print(generateTable(headersList,rowsList));
+        printTheSpaceFormat(totalWeightAndPoints);
+        printTheSpaceFormat(couponCode);
+        printTheSpaceFormat(thankYouNote);
     }
 
 
@@ -77,8 +107,7 @@ public class OutputGenerator {
 
         Map<Integer,Integer> columnMaxWidthMapping = getMaximumWidhtofTable(headersList, rowsList);
 
-        stringBuilder.append(NEW_LINE);
-        stringBuilder.append(NEW_LINE);
+
         createRowLine(stringBuilder, headersList.size(), columnMaxWidthMapping);
         stringBuilder.append(NEW_LINE);
 
@@ -106,7 +135,6 @@ public class OutputGenerator {
 
         stringBuilder.append(NEW_LINE);
         createRowLine(stringBuilder, headersList.size(), columnMaxWidthMapping);
-        stringBuilder.append(NEW_LINE);
         stringBuilder.append(NEW_LINE);
 
         return stringBuilder.toString();

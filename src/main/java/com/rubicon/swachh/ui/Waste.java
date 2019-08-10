@@ -28,7 +28,7 @@ public class Waste {
             arrayWaste.add(wasteData);
 
             System.out.print("\nDo you want to add more waste\n");
-            System.out.print("Press Y or N");
+            System.out.print("Press Y or N: ");
             String input = String.valueOf(scanner.next().charAt(0));
             Validator validator = new Validator();
             loop = validator.validateChoice(input);
