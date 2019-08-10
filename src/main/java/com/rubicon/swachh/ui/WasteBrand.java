@@ -23,7 +23,7 @@ class WasteBrand {
             System.out.println("\t4. Thumbs Up");
             System.out.println("\t5. Other");
 
-            int switch_case = validator.validateBrandInput(scanner.next());
+            int switch_case = validator.validateBrandInput(scanner.next().trim());
 
             switch (switch_case) {
                 case 1:

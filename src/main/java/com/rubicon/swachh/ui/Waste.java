@@ -21,7 +21,7 @@ public class Waste {
             WasteBrand brandType = new WasteBrand(wasteType.getTheTypeOfWaste());
             WasteWeight wasteWeight = new WasteWeight(wasteType.getTheTypeOfWaste(), brandType.getTypeOfBrand());
 
-            wasteData.setWasteType(wasteType.getWasteTypeData());
+            wasteData.setWasteTypeData(wasteType.getWasteTypeData());
             wasteData.setWasteBrandData(brandType.getWasteBrandData());
             wasteData.setWeight(wasteWeight.getWeight());
 

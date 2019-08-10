@@ -38,7 +38,7 @@ public class Validator {
             System.out.println("\nPlease, Enter a valid phone number:");
             System.out.print("Enter Again: ");
 
-            return (checkNumber(scanner.nextLine()));
+            return (checkNumber(scanner.nextLine().trim()));
         }
     }
 
@@ -49,7 +49,7 @@ public class Validator {
             System.out.println("\nPlease, Enter a valid address:");
             System.out.print("Enter Again: ");
 
-            address = checkAddress(scanner.nextLine());
+            address = checkAddress(scanner.nextLine().trim());
             return address;
         }
 
@@ -60,7 +60,7 @@ public class Validator {
             return Integer.parseInt(typeSelected);
         } else {
             System.out.println("\nPlease, Enter valid input for type:");
-            return validateTypeInput(scanner.next());
+            return validateTypeInput(scanner.next().trim());
         }
     }
 
@@ -71,7 +71,7 @@ public class Validator {
         } else {
             System.out.println("\nPlease, Enter valid input:");
 
-            return validateBrandInput(scanner.next());
+            return validateBrandInput(scanner.next().trim());
         }
     }
 
@@ -80,7 +80,7 @@ public class Validator {
             return choice.equals("y")||choice.equals("Y");
         }else {
             System.out.println("\nPlease, Enter either Y or N");
-            validateChoice(String.valueOf(scanner.next().charAt(0)));
+            validateChoice(String.valueOf(scanner.next().trim().charAt(0)));
         }
         return true;
     }
