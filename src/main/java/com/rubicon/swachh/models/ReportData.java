@@ -57,6 +57,7 @@ public class ReportData {
     }
 
     public void printTheReport(){
+
         System.out.print(userData.toString());
         for (WasteData data:wasteData){
             System.out.println( data.getWasteTypeData().toString()+data.getWasteBrandData().toString()+

@@ -27,7 +27,7 @@ public class Reader {
         Element eleWasteType = XMLHandler.getChildElement(eleWasteWeight,typeOfWaste);
         Element eleWasteBrand = XMLHandler.getChildElement(eleWasteType,typeOfWasteBrand);
 
-//        Element eleCouponPoints = XMLHandler.getChildElement(eleWasteBrand,"Points");
+//      Element eleCouponPoints = XMLHandler.getChildElement(eleWasteBrand,"Points");
 
         return 40;
     }

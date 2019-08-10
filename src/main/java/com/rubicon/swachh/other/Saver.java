@@ -92,7 +92,7 @@ public class Saver {
 
         Element eleCoupon = XMLHandler.createChild(eleReport, "Coupon");
         Element eleCouponCode = XMLHandler.createChild(eleCoupon, "CouponCode");
-        Element eleCouponPoints = XMLHandler.createChild(eleCoupon, "CouponPoints");
+        Element eleCouponPoints = XMLHandler.createChild(eleCoupon, "TotalCouponPoints");
 
         eleCouponCode.setTextContent(reportData.getCouponData().getCouponCode());
         eleCouponPoints.setTextContent(String.valueOf(reportData.getTotalCouponPoints()));

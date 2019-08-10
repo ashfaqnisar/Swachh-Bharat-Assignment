@@ -1,9 +1,11 @@
 package com.rubicon.swachh;
 
 import com.rubicon.swachh.models.ReportData;
+import com.rubicon.swachh.other.OutputGenerator;
 import com.rubicon.swachh.other.Saver;
 import com.rubicon.swachh.ui.Coupon;
 import com.rubicon.swachh.ui.Register;
+import com.rubicon.swachh.ui.Report;
 import com.rubicon.swachh.ui.Waste;
 
 
@@ -17,13 +19,16 @@ public class App {
 
         Coupon coupon = new Coupon();
 
-        ReportData reportData = new ReportData(register.getUserData(), waste.getArrayWasteData(),
+        Report report = new Report(register.getUserData(),waste.getArrayWasteData(),
                 coupon.getCouponData());
 
-        reportData.printTheReport();
+        report.printReport();
+        report.saveReport();
 
-        Saver saver = new Saver();
-        saver.storeTheReport(reportData);
 
+//
+//        for (int i=0;i<91;i++){
+//            System.out.print("_");
+//        }
     }
 }
