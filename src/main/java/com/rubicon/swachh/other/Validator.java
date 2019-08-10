@@ -14,7 +14,7 @@ public class Validator {
         if (name.replaceAll(" ","").matches(NAME_REXP)) {
             return name;
         } else {
-            System.out.println("The First Character should not be a number.");
+            System.out.println("Enter a valid name.");
             System.out.print("Enter Again: ");
             name = checkName(scanner.next());
             return name;

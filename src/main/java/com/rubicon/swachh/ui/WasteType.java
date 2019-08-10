@@ -15,6 +15,8 @@ class WasteType {
         System.out.println("\t1. Glass");
         System.out.println("\t2. Plastic");
         System.out.println("\t3. Metal");
+        System.out.print("Enter Option: ");
+
 
         Scanner scanner = new Scanner(System.in);
         int switch_case = validator.validateTypeInput(scanner.next().trim());

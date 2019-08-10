@@ -22,6 +22,7 @@ class WasteBrand {
             System.out.println("\t3. Diet Coke");
             System.out.println("\t4. Thumbs Up");
             System.out.println("\t5. Other");
+            System.out.print("Enter Option: ");
 
             int switch_case = validator.validateBrandInput(scanner.next().trim());
 
