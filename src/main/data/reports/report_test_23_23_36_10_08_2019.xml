@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report>
+    <User>
+        <Name>test</Name>
+        <Email>lidjsiound@gbiudn.cojm</Email>
+        <Number>8464646464</Number>
+        <Address>uibflikjdnf</Address>
+    </User>
+    <WasteData>
+        <Waste>
+            <Type>Glass</Type>
+            <Brand>Diet Coke</Brand>
+            <Weight>45</Weight>
+            <Points>29</Points>
+        </Waste>
+        <TotalWeight>45</TotalWeight>
+    </WasteData>
+    <Coupon>
+        <CouponCode>8fewdkm</CouponCode>
+        <TotalCouponPoints>29</TotalCouponPoints>
+    </Coupon>
+</Report>

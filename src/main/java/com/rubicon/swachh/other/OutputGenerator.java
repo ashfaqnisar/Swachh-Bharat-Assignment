@@ -105,7 +105,7 @@ public class OutputGenerator {
 
         int rowHeight = overRiddenHeaderHeight.length > 0 ? overRiddenHeaderHeight[0] : 1;
 
-        Map<Integer,Integer> columnMaxWidthMapping = getMaximumWidhtofTable(headersList, rowsList);
+        Map<Integer,Integer> columnMaxWidthMapping = getMaximumWidthofTable(headersList, rowsList);
 
 
         createRowLine(stringBuilder, headersList.size(), columnMaxWidthMapping);
@@ -163,7 +163,7 @@ public class OutputGenerator {
     }
 
 
-    private Map<Integer,Integer> getMaximumWidhtofTable(List<String> headersList, List<List<String>> rowsList)
+    private Map<Integer,Integer> getMaximumWidthofTable(List<String> headersList, List<List<String>> rowsList)
     {
         Map<Integer,Integer> columnMaxWidthMapping = new HashMap<>();
 
